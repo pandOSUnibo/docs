@@ -1,7 +1,7 @@
 pandOS is a library.
 
 .. toctree::
-   :caption: Modules:
+   :caption: Modules
    :titlesonly:
    :maxdepth: 2
    

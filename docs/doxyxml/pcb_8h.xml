@@ -41,12 +41,13 @@
         <argsstring>()</argsstring>
         <name>initPcbs</name>
         <briefdescription>
+<para>Initializes the PCBs. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="7" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="7" declcolumn="6"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="11" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="11" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1ab42d615bd7053b952a73dee6fd84c54d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -58,12 +59,23 @@
           <declname>p</declname>
         </param>
         <briefdescription>
+<para>Frees a certain PCB. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the PCB to be freed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="9" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="9" declcolumn="6"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="18" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="18" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a03951baaa04f601feee5405138304892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -71,12 +83,16 @@
         <argsstring>()</argsstring>
         <name>allocPcb</name>
         <briefdescription>
+<para>Allocates a PCB. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>pcb_t* A pointer to the allocated PCB. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="11" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="11" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="25" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="25" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a21ca0d917dc8cc9a515f74350305c8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -89,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="13" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="13" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="27" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="27" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a14a862477c2301432a9e9b0aac901c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -106,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="15" column="5" declfile="/home/circleci/docs/h/pcb.h" declline="15" declcolumn="5"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="29" column="5" declfile="/home/circleci/docs/h/pcb.h" declline="29" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1ab3b557f910b033449a42aa5cf9b86c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -127,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="17" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="17" declcolumn="6"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="31" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="31" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a80a3845d65f890d39a523f3df66095d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -144,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="19" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="19" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="33" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="33" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a4693d732287c116baf471b86cec97b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -161,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="21" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="21" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="35" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="35" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a53e0aeba401f9c8967fa7b9ae4bcb98b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -182,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="23" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="23" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="37" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="37" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a7d6e59469f944f132a41c390b606ab08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -199,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="25" column="5" declfile="/home/circleci/docs/h/pcb.h" declline="25" declcolumn="5"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="39" column="5" declfile="/home/circleci/docs/h/pcb.h" declline="39" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1acbb38484ab3807a24bf6513c05101a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -220,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="27" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="27" declcolumn="6"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="41" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="41" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a4d8a060bdeac7847a16e45ffe18d3389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -237,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="29" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="29" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="43" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="43" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1ac842b91f7c9963383016a95ae09f903c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -254,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="31" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="31" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="45" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="45" declcolumn="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -268,33 +284,33 @@
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initPcbs();</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>freePcb(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*allocPcb();</highlight></codeline>
+<codeline lineno="11"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initPcbs();</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*mkEmptyProcQ();</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>emptyProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*tp);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*headProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*tp);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*removeProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*outProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>emptyChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>freePcb(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*allocPcb();</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*prnt,<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*mkEmptyProcQ();</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>removeChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>emptyProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*tp);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*outChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>p);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*headProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*tp);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*removeProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*outProcQ(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>emptyChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*prnt,<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>removeChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*outChild(<ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>p);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/pcb.h"/>
   </compounddef>
