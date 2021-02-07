@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="asl_8h" kind="file" language="C++">
+    <compoundname>asl.h</compoundname>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="4">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/asl.h</label>
+        <link refid="asl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="asl_8h_1acf78d4da6a3a5d5b7fd14db4c33fbf27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int insertBlocked</definition>
+        <argsstring>(int *semAdd, pcb_t *p)</argsstring>
+        <name>insertBlocked</name>
+        <param>
+          <type>int *</type>
+          <declname>semAdd</declname>
+        </param>
+        <param>
+          <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/asl.h" line="6" column="5" declfile="/home/circleci/docs/h/asl.h" declline="6" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="asl_8h_1ab9f7e235ff784779534f45815f686da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+        <definition>pcb_t* removeBlocked</definition>
+        <argsstring>(int *semAdd)</argsstring>
+        <name>removeBlocked</name>
+        <param>
+          <type>int *</type>
+          <declname>semAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/asl.h" line="8" column="7" declfile="/home/circleci/docs/h/asl.h" declline="8" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="asl_8h_1a0726c34768ec59b5bfcb118bc2bb09f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+        <definition>pcb_t* outBlocked</definition>
+        <argsstring>(pcb_t *p)</argsstring>
+        <name>outBlocked</name>
+        <param>
+          <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/asl.h" line="10" column="7" declfile="/home/circleci/docs/h/asl.h" declline="10" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="asl_8h_1a36e1cdefa8ba8d20df2b02c77d971c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+        <definition>pcb_t* headBlocked</definition>
+        <argsstring>(int *semAdd)</argsstring>
+        <name>headBlocked</name>
+        <param>
+          <type>int *</type>
+          <declname>semAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/asl.h" line="12" column="7" declfile="/home/circleci/docs/h/asl.h" declline="12" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="asl_8h_1afb0669081b775f6f9b2bd35b14d54785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initASL</definition>
+        <argsstring>()</argsstring>
+        <name>initASL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/asl.h" line="14" column="6" declfile="/home/circleci/docs/h/asl.h" declline="14" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ASL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>insertBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>removeBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>outBlocked(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>headBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initASL();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/asl.h"/>
+  </compounddef>
+</doxygen>
