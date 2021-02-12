@@ -46,12 +46,35 @@
           <declname>p</declname>
         </param>
         <briefdescription>
+<para>Inserts a PCB at the tail of the process queue associated with the semaphore with the given physical address. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>semAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Physical address of the process queue. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the PCB to be inserted. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if a new semaphore descriptor is allocated, FALSE otherwise. </para>
+</simplesect>
+<simplesect kind="remark"><para>TRUE and FALSE are defined in umps3/umps/const.h. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/asl.h" line="6" column="5" declfile="/home/circleci/docs/h/asl.h" declline="6" declcolumn="5"/>
+        <location file="/home/circleci/docs/h/asl.h" line="19" column="5" declfile="/home/circleci/docs/h/asl.h" declline="19" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="asl_8h_1ab9f7e235ff784779534f45815f686da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -63,12 +86,25 @@
           <declname>semAdd</declname>
         </param>
         <briefdescription>
+<para>Removes the PCB at the head of the process queue associated with the semaphore with the given physical address. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>semAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Physical address of the process queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The head of the process queue if a descriptor with physical address semAdd was found, NULL otherwise. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/asl.h" line="8" column="7" declfile="/home/circleci/docs/h/asl.h" declline="8" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/asl.h" line="32" column="7" declfile="/home/circleci/docs/h/asl.h" declline="32" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="asl_8h_1a0726c34768ec59b5bfcb118bc2bb09f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -80,12 +116,25 @@
           <declname>p</declname>
         </param>
         <briefdescription>
+<para>Removes and returns the pcb pointed by p from the process queue of the semaphore on which p is blocked. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the pcb to be removed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the removed pcb. If the pcb pointed by p is not in the process queue of his semaphore (error situation) returns NULL. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/asl.h" line="10" column="7" declfile="/home/circleci/docs/h/asl.h" declline="10" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/asl.h" line="43" column="7" declfile="/home/circleci/docs/h/asl.h" declline="43" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="asl_8h_1a36e1cdefa8ba8d20df2b02c77d971c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -97,12 +146,25 @@
           <declname>semAdd</declname>
         </param>
         <briefdescription>
+<para>Returns a pointer to the pcb that is the head of process queue associated with semaphore semAdd. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>semAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Semaphore identifier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The head of the process list associated with the semaphore semAdd if it isn&apos;t empty, NULL otherwise. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/asl.h" line="12" column="7" declfile="/home/circleci/docs/h/asl.h" declline="12" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/asl.h" line="53" column="7" declfile="/home/circleci/docs/h/asl.h" declline="53" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="asl_8h_1afb0669081b775f6f9b2bd35b14d54785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -110,12 +172,16 @@
         <argsstring>()</argsstring>
         <name>initASL</name>
         <briefdescription>
+<para>Initializes the ASLs. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="remark"><para>This function should be called before any other ASL-related function. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/asl.h" line="14" column="6" declfile="/home/circleci/docs/h/asl.h" declline="14" declcolumn="6"/>
+        <location file="/home/circleci/docs/h/asl.h" line="61" column="6" declfile="/home/circleci/docs/h/asl.h" declline="61" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -128,17 +194,17 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>insertBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>removeBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>outBlocked(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>headBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initASL();</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="19"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>insertBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>removeBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>outBlocked(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>headBlocked(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initASL();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/asl.h"/>
   </compounddef>

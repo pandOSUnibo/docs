@@ -11,11 +11,6 @@
     <member refid="structpcb__t_1a65820e6af73bc01d3afa522bb9f5955f" kind="variable"><name>p_time</name></member>
     <member refid="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" kind="variable"><name>p_semAdd</name></member>
   </compound>
-  <compound refid="structsemd__t" kind="struct"><name>semd_t</name>
-    <member refid="structsemd__t_1aeaa3d1844ef8af4ec596bfd2493c18fc" kind="variable"><name>s_next</name></member>
-    <member refid="structsemd__t_1a5740ee2828ecb33c46da24176e812ffd" kind="variable"><name>s_semAdd</name></member>
-    <member refid="structsemd__t_1a5ef98a0dc36384e59fd69898cc766cf2" kind="variable"><name>s_procQ</name></member>
-  </compound>
   <compound refid="asl_8h" kind="file"><name>asl.h</name>
     <member refid="asl_8h_1acf78d4da6a3a5d5b7fd14db4c33fbf27" kind="function"><name>insertBlocked</name></member>
     <member refid="asl_8h_1ab9f7e235ff784779534f45815f686da8" kind="function"><name>removeBlocked</name></member>
@@ -133,8 +128,6 @@
     <member refid="pandos__types_8h_1a8dfc83cbb8a200048ed977af78885aa1" kind="typedef"><name>memaddr</name></member>
     <member refid="pandos__types_8h_1a71acfdbc74942780681d06efcc05a0a5" kind="typedef"><name>pcb_t</name></member>
     <member refid="pandos__types_8h_1a64a848403f23a0af63c3e3fdf2c88d03" kind="typedef"><name>pcb_PTR</name></member>
-    <member refid="pandos__types_8h_1af27ff7e13a3301fb63413714541fdd26" kind="typedef"><name>semd_t</name></member>
-    <member refid="pandos__types_8h_1ae0ccd0a80ed7dff33bfc46d5e451f77c" kind="typedef"><name>semd_PTR</name></member>
   </compound>
   <compound refid="pcb_8h" kind="file"><name>pcb.h</name>
     <member refid="pcb_8h_1a5cbd92344b2dae9f317b956359b5f2d9" kind="function"><name>initPcbs</name></member>

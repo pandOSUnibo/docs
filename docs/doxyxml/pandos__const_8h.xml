@@ -1157,7 +1157,7 @@
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a159719c70cea882d9a5a87170b77a95e" prot="public" static="no">
         <name>MAXPOINT</name>
-        <initializer>((void *)0xFFFFFFFF)</initializer>
+        <initializer>((void *)0xFFFFFFFF) /*Maximum address of memory location*/</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1168,7 +1168,7 @@
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a8b59ce3716689db66d5dbebf7ded99f0" prot="public" static="no">
         <name>MINPOINT</name>
-        <initializer>((void *)0x00000000)</initializer>
+        <initializer>((void *)0x00000000) /*Minimum address of memory location*/</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1337,8 +1337,8 @@
 <codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>End<sp/>of<sp/>Mikeyg<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOINT<sp/>((void<sp/>*)0xFFFFFFFF)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINPOINT<sp/>((void<sp/>*)0x00000000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOINT<sp/>((void<sp/>*)0xFFFFFFFF)<sp/></highlight><highlight class="comment">/*Maximum<sp/>address<sp/>of<sp/>memory<sp/>location*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINPOINT<sp/>((void<sp/>*)0x00000000)<sp/></highlight><highlight class="comment">/*Minimum<sp/>address<sp/>of<sp/>memory<sp/>location*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
