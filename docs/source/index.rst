@@ -5,9 +5,11 @@ This documentation describes the implementation of pandOS by Luca Donno, Antonio
    :caption: Contributing
    :titlesonly:
    :maxdepth: 2
+
    workflow
    style_guide
    automations
+
 .. toctree::
    :caption: Modules
    :titlesonly:
