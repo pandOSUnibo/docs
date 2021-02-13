@@ -92,7 +92,7 @@
         </briefdescription>
         <detaileddescription>
 <para>All the records are cleaned before the allocation.</para>
-<para><simplesect kind="return"><para>The allocated PCB if memory is available, NULL otherwise. </para>
+<para><simplesect kind="return"><para>The allocated PCB. Returns NULL if memory is not available. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -211,7 +211,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A pointer to the head of the queue. If the queue is empty, returns NULL. </para>
+<simplesect kind="return"><para>A pointer to the head of the queue. Returns NULL if the queue is empty. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -283,13 +283,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A pointer to the removed PCB. If the PCB pointed by p is not in the queue, returns NULL. </para>
+<simplesect kind="return"><para>A pointer to the removed PCB. Retuns NULL if the PCB pointed by p is not in the queue. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="100" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="100" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="99" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="99" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a7d6e59469f944f132a41c390b606ab08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -321,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="111" column="5" declfile="/home/circleci/docs/h/pcb.h" declline="111" declcolumn="5"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="110" column="5" declfile="/home/circleci/docs/h/pcb.h" declline="110" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1acbb38484ab3807a24bf6513c05101a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -361,7 +361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="120" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="120" declcolumn="6"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="119" column="6" declfile="/home/circleci/docs/h/pcb.h" declline="119" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1a4d8a060bdeac7847a16e45ffe18d3389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -385,13 +385,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A pointer to the first child of the PCB pointed by p. If p has no children return NULL. </para>
+<simplesect kind="return"><para>A pointer to the first child of the PCB pointed by p. Returns NULL if p has no children. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="130" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="130" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="129" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="129" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="pcb_8h_1ac842b91f7c9963383016a95ae09f903c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -403,7 +403,7 @@
           <declname>p</declname>
         </param>
         <briefdescription>
-<para>Removes and return the PCB pointed by p from the list of his parent&apos;s children. </para>
+<para>Removes and returns the PCB pointed by p from the list of his parent&apos;s children. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -415,13 +415,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A pointer to the removed PCB. If the PCB pointed by p doesn&apos;t have any parent return NULL. </para>
+<simplesect kind="return"><para>A pointer to the removed PCB. Returns NULL if the PCB pointed by p doesn&apos;t have a parent. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pcb.h" line="140" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="140" declcolumn="7"/>
+        <location file="/home/circleci/docs/h/pcb.h" line="139" column="7" declfile="/home/circleci/docs/h/pcb.h" declline="139" declcolumn="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -462,17 +462,17 @@
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1a4693d732287c116baf471b86cec97b69" kindref="member">removeProcQ</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1a53e0aeba401f9c8967fa7b9ae4bcb98b" kindref="member">outProcQ</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pcb_8h_1a7d6e59469f944f132a41c390b606ab08" kindref="member">emptyChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pcb_8h_1acbb38484ab3807a24bf6513c05101a72" kindref="member">insertChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*prnt,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1a4d8a060bdeac7847a16e45ffe18d3389" kindref="member">removeChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1ac842b91f7c9963383016a95ae09f903c" kindref="member">outChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1a53e0aeba401f9c8967fa7b9ae4bcb98b" kindref="member">outProcQ</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>**tp,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pcb_8h_1a7d6e59469f944f132a41c390b606ab08" kindref="member">emptyChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pcb_8h_1acbb38484ab3807a24bf6513c05101a72" kindref="member">insertChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*prnt,<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1a4d8a060bdeac7847a16e45ffe18d3389" kindref="member">removeChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="pcb_8h_1ac842b91f7c9963383016a95ae09f903c" kindref="member">outChild</ref>(<ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/pcb.h"/>
   </compounddef>

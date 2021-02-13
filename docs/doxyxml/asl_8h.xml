@@ -98,7 +98,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The head of the process queue if a descriptor with physical address semAdd was found, NULL otherwise. </para>
+<simplesect kind="return"><para>The head of the process queue if a descriptor with physical address semAdd. Returns NULL if the descriptor was not found. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -128,7 +128,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>A pointer to the removed PCB. If the PCB pointed by p is not in the process queue of his semaphore, returns NULL. </para>
+<simplesect kind="return"><para>A pointer to the removed PCB. Returns NULL if the PCB pointed by p is not in the process queue of its semaphore. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -158,7 +158,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The head of the process list associated with the semaphore semAdd. If the list is empty, returns NULL. </para>
+<simplesect kind="return"><para>The head of the process list associated with the semaphore semAdd. Returns NULL if the list is empty. </para>
 </simplesect>
 </para>
         </detaileddescription>
