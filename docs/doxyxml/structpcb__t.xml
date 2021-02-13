@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="structpcb__t" kind="struct" language="C++" prot="public">
     <compoundname>pcb_t</compoundname>
+    <includes refid="pandos__types_8h" local="no">pandos_types.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structpcb__t_1a6d1514ac0cfe96f5384a9915df9e02a1" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -9,12 +10,14 @@
         <argsstring></argsstring>
         <name>p_next</name>
         <briefdescription>
+<para>Pointer to next entry <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="19" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="19" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="32" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1a65ec986dfab35a1b5afaedd2604931ab" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -22,12 +25,13 @@
         <argsstring></argsstring>
         <name>p_prev</name>
         <briefdescription>
+<para>Pointer to previous entry. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="20" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="33" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1aea679c77d1e8bd763bb7d0a6b9df7f87" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -35,12 +39,14 @@
         <argsstring></argsstring>
         <name>p_prnt</name>
         <briefdescription>
+<para>Pointer to parent <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="23" column="12" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="23" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="36" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1a3935a4ed3b39292813617ebc1c467117" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -48,12 +54,14 @@
         <argsstring></argsstring>
         <name>p_child</name>
         <briefdescription>
+<para>Pointer to 1st child <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="24" column="1" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="37" column="21" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1ab3106557bcc23b4b2955009955db4471" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -61,12 +69,14 @@
         <argsstring></argsstring>
         <name>p_next_sib</name>
         <briefdescription>
+<para>Pointer to next sibling <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="25" column="1" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="25" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="38" column="21" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1ad4705c9f47a5ff2c427eceb46e962eca" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -74,12 +84,13 @@
         <argsstring></argsstring>
         <name>p_prev_sib</name>
         <briefdescription>
+<para>Pointer to prev. sibling. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="26" column="1" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="26" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="39" column="21" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1a3476a4aa249da711fa3f8976ff5f8e3b" prot="public" static="no" mutable="no">
         <type>state_t</type>
@@ -87,12 +98,14 @@
         <argsstring></argsstring>
         <name>p_s</name>
         <briefdescription>
+<para>Processor state <linebreak/>
+ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="29" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="42" column="17" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1a65820e6af73bc01d3afa522bb9f5955f" prot="public" static="no" mutable="no">
         <type>cpu_t</type>
@@ -100,12 +113,13 @@
         <argsstring></argsstring>
         <name>p_time</name>
         <briefdescription>
+<para>Cpu time used by proc. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="30" column="7" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="43" column="11" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" prot="public" static="no" mutable="no">
         <type>int *</type>
@@ -113,17 +127,22 @@
         <argsstring></argsstring>
         <name>p_semAdd</name>
         <briefdescription>
+<para>Pointer to semaphore on which proc is blocked. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="31" column="5" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="44" column="9" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Process Control Block. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="remark"><para>When inside a queue, by convention p_next points to the PCB that will exit the queue before it, while p_prev points to the PCB that will exit the queue after it. </para>
+</simplesect>
+</para>
     </detaileddescription>
     <collaborationgraph>
       <node id="1">
@@ -139,7 +158,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/circleci/docs/h/pandos_types.h" line="17" column="20" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="17" bodyend="35"/>
+    <location file="/home/circleci/docs/h/pandos_types.h" line="30" column="20" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="30" bodyend="47"/>
     <listofallmembers>
       <member refid="structpcb__t_1a3935a4ed3b39292813617ebc1c467117" prot="public" virt="non-virtual"><scope>pcb_t</scope><name>p_child</name></member>
       <member refid="structpcb__t_1a6d1514ac0cfe96f5384a9915df9e02a1" prot="public" virt="non-virtual"><scope>pcb_t</scope><name>p_next</name></member>

@@ -19,7 +19,7 @@
     <invincdepgraph>
       <node id="4">
         <label>/home/circleci/docs/h/pcb.h</label>
-        <link refid="pcb_8h_source"/>
+        <link refid="pcb_8h"/>
       </node>
       <node id="1">
         <label>/home/circleci/docs/h/pandos_const.h</label>
@@ -31,11 +31,11 @@
       </node>
       <node id="3">
         <label>/home/circleci/docs/h/asl.h</label>
-        <link refid="asl_8h_source"/>
+        <link refid="asl_8h"/>
       </node>
       <node id="2">
         <label>/home/circleci/docs/h/pandos_types.h</label>
-        <link refid="pandos__types_8h_source"/>
+        <link refid="pandos__types_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
@@ -925,8 +925,9 @@
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ae586204918bfbea259810829a239d886" prot="public" static="no">
         <name>TIMESLICE</name>
-        <initializer>5000 /* length of proc&apos;s time slice	*/</initializer>
+        <initializer>5000</initializer>
         <briefdescription>
+<para>Length of proc&apos;s time slice. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1157,8 +1158,9 @@
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a159719c70cea882d9a5a87170b77a95e" prot="public" static="no">
         <name>MAXPOINT</name>
-        <initializer>((void *)0xFFFFFFFF) /*Maximum address of memory location*/</initializer>
+        <initializer>((void *)0xFFFFFFFF)</initializer>
         <briefdescription>
+<para>Maximum address of memory location. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1168,8 +1170,9 @@
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a8b59ce3716689db66d5dbebf7ded99f0" prot="public" static="no">
         <name>MINPOINT</name>
-        <initializer>((void *)0x00000000) /*Minimum address of memory location*/</initializer>
+        <initializer>((void *)0x00000000)</initializer>
         <briefdescription>
+<para>Minimum address of memory location. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1179,22 +1182,18 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>This header file contains utility constants &amp; macro definitions. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PANDOS_CONST_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PANDOS_CONST_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************</highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>header<sp/>file<sp/>contains<sp/>utility<sp/>constants<sp/>&amp;<sp/>macro<sp/>definitions.</highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>PANDOS_CONST_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PANDOS_CONST_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;umps3/umps/const.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Mikeyg<sp/>Added<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Mikeyg<sp/>Added<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPROC<sp/>20</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
@@ -1220,7 +1219,7 @@
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSEMVIRT<sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>register<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Status<sp/>register<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALLOFF<sp/><sp/><sp/><sp/><sp/><sp/>0x00000000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USERPON<sp/><sp/><sp/><sp/><sp/>0x00000008</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IEPON<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000004</highlight><highlight class="normal"></highlight></codeline>
@@ -1229,7 +1228,7 @@
 <codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEBITON<sp/><sp/><sp/><sp/><sp/>0x08000000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISABLEINTS<sp/>0xFFFFFFFE</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Cause<sp/>register<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Cause<sp/>register<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GETEXECCODE<sp/><sp/><sp/><sp/>0x0000007C</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLEAREXECCODE<sp/><sp/>0xFFFFFF00</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOCALTIMERINT<sp/><sp/>0x00000200</highlight><highlight class="normal"></highlight></codeline>
@@ -1247,13 +1246,13 @@
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAUSESHIFT<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>EntryLO<sp/>register<sp/>(NDVG)<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EntryLO<sp/>register<sp/>(NDVG)<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIRTYON<sp/><sp/>0x00000400</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VALIDON<sp/><sp/>0x00000200</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLOBALON<sp/>0x00000100</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>EntryHI<sp/>register<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>EntryHI<sp/>register<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GETPAGENO<sp/><sp/><sp/><sp/><sp/>0x3FFFF000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GETSHAREFLAG<sp/><sp/>0xC0000000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VPNSHIFT<sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
@@ -1261,11 +1260,11 @@
 <codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHAREDSEGFLAG<sp/>30</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Index<sp/>register<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//Index<sp/>register<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRESENTFLAG<sp/>0x80000000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Device<sp/>register<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Device<sp/>register<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV0ON<sp/>0x00000001</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV1ON<sp/>0x00000002</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV2ON<sp/>0x00000004</highlight><highlight class="normal"></highlight></codeline>
@@ -1288,7 +1287,7 @@
 <codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKWRITE<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Memory<sp/>Constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Memory<sp/>Constants<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCSTARTADDR<sp/>0x800000B0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USERSTACKTOP<sp/><sp/><sp/>0xC0000000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KERNELSTACK<sp/><sp/><sp/><sp/>0x20001000</highlight><highlight class="normal"></highlight></codeline>
@@ -1298,7 +1297,7 @@
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIVATE<sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Utility<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Utility<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
@@ -1306,8 +1305,8 @@
 <codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BYTELENGTH<sp/>8</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PSECOND<sp/><sp/><sp/><sp/>100000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMESLICE<sp/><sp/>5000<sp/></highlight><highlight class="comment">/*<sp/>length<sp/>of<sp/>proc&apos;s<sp/>time<sp/>slice<sp/><sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NEVER<sp/><sp/><sp/><sp/><sp/><sp/>0x7FFFFFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="pandos__const_8h_1ae586204918bfbea259810829a239d886" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMESLICE<sp/><sp/>5000<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor">#define<sp/>NEVER<sp/><sp/><sp/><sp/><sp/><sp/>0x7FFFFFFF</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECOND<sp/><sp/><sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATESIZE<sp/><sp/>0x8C</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICECNT<sp/><sp/>(DEVINTNUM<sp/>*<sp/>DEVPERINT)</highlight><highlight class="normal"></highlight></codeline>
@@ -1334,12 +1333,12 @@
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCMAX<sp/>8</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POOLSIZE<sp/>(UPROCMAX<sp/>*<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>End<sp/>of<sp/>Mikeyg<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>Mikeyg<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOINT<sp/>((void<sp/>*)0xFFFFFFFF)<sp/></highlight><highlight class="comment">/*Maximum<sp/>address<sp/>of<sp/>memory<sp/>location*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MINPOINT<sp/>((void<sp/>*)0x00000000)<sp/></highlight><highlight class="comment">/*Minimum<sp/>address<sp/>of<sp/>memory<sp/>location*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="pandos__const_8h_1a159719c70cea882d9a5a87170b77a95e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOINT<sp/>((void<sp/>*)0xFFFFFFFF)<sp/></highlight></codeline>
+<codeline lineno="156" refid="pandos__const_8h_1a8b59ce3716689db66d5dbebf7ded99f0" refkind="member"><highlight class="preprocessor">#define<sp/>MINPOINT<sp/>((void<sp/>*)0x00000000)<sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/pandos_const.h"/>
