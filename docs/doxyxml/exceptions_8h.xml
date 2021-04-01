@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="exceptions_8h" kind="file" language="C++">
+    <compoundname>exceptions.h</compoundname>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/exceptions.h</label>
+        <link refid="exceptions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="2">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="exceptions_8h_1adc21940b2cb1be9f12d888bc9f03c9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cpu_t</type>
+        <definition>cpu_t elapsedTime</definition>
+        <argsstring>()</argsstring>
+        <name>elapsedTime</name>
+        <briefdescription>
+<para>Calculates the real time elapsed since the beginning of the time slice, which was set at the last time that this process was selected by the scheduler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The real time elapsed since the beginning of the time slice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/exceptions.h" line="23" column="7" declfile="/home/circleci/docs/h/exceptions.h" declline="23" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="exceptions_8h_1a41de8150eff044a237990c271d57ea27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resume</definition>
+        <argsstring>()</argsstring>
+        <name>resume</name>
+        <briefdescription>
+<para>Gives control back to the process that was executing before the exception, or call the scheduler if there was no process running (WAIT state). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/exceptions.h" line="30" column="6" declfile="/home/circleci/docs/h/exceptions.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="exceptions_8h_1acb4791b6f9b97d6e3aecd0b140c018d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exceptionHandler</definition>
+        <argsstring>()</argsstring>
+        <name>exceptionHandler</name>
+        <briefdescription>
+<para>Handles an exception. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>This procedure should not be called directly: if correctly configured, the processor will call it when an exception is raised. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/exceptions.h" line="39" column="6" declfile="/home/circleci/docs/h/exceptions.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exceptions handler. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-03-14</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>EXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">cpu_t<sp/><ref refid="exceptions_8h_1adc21940b2cb1be9f12d888bc9f03c9bd" kindref="member">elapsedTime</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exceptions_8h_1a41de8150eff044a237990c271d57ea27" kindref="member">resume</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exceptions_8h_1acb4791b6f9b97d6e3aecd0b140c018d0" kindref="member">exceptionHandler</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/exceptions.h"/>
+  </compounddef>
+</doxygen>

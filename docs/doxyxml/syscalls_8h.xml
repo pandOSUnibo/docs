@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="syscalls_8h" kind="file" language="C++">
+    <compoundname>syscalls.h</compoundname>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="4">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/syscalls.h</label>
+        <link refid="syscalls_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="2">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="syscalls_8h_1aa2796039431158b3273acbdd4e3e0e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createProcess</definition>
+        <argsstring>(state_t *statep, support_t *supportp)</argsstring>
+        <name>createProcess</name>
+        <param>
+          <type>state_t *</type>
+          <declname>statep</declname>
+        </param>
+        <param>
+          <type><ref refid="structsupport__t" kindref="compound">support_t</ref> *</type>
+          <declname>supportp</declname>
+        </param>
+        <briefdescription>
+<para>SYS1: creates a new process using the state and the support structures provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no memory is available an error code -1 is placed in the caller&apos;s v0 register, otherwise 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial state of the new process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>supportp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Support structure used from the SupportLevel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="26" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1a255d4de0a1d808e3a36be8ceb5c0f041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void termProcess</definition>
+        <argsstring>()</argsstring>
+        <name>termProcess</name>
+        <briefdescription>
+<para>SYS2: kills the running process and all its progeny. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="32" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1ae87f129601301d841bd0a6cc687153b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void passeren</definition>
+        <argsstring>()</argsstring>
+        <name>passeren</name>
+        <briefdescription>
+<para>SYS3 (P): performs a P operation on the semaphore provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>semAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the semaphore to perform the P on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="39" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1a710f7fdef70fa26c99ee1d9956c56449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+        <definition>pcb_t* verhogen</definition>
+        <argsstring>(int *semAdd)</argsstring>
+        <name>verhogen</name>
+        <param>
+          <type>int *</type>
+          <declname>semAdd</declname>
+        </param>
+        <briefdescription>
+<para>SYS4 (V): performs a V operation on the semaphore provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>semAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the semaphore to perform the V on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the PCB of the process that was eventually unblocked by the V operation, NULL if there was no process to be unblocked. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="48" column="7" declfile="/home/circleci/docs/h/syscalls.h" declline="48" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1a9ad2fd60c036f245c78b039c623bf146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ioWait</definition>
+        <argsstring>(int intlNo, int dNum, bool waitForTermRea)</argsstring>
+        <name>ioWait</name>
+        <param>
+          <type>int</type>
+          <declname>intlNo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dNum</declname>
+        </param>
+        <param>
+          <type><ref refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" kindref="member">bool</ref></type>
+          <declname>waitForTermRea</declname>
+        </param>
+        <briefdescription>
+<para>SYS5: waits for an I/O operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It performs a P operation on the semaphore of the selected (sub)device. The process state is saved and the scheduler is called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intlNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt line number in [3, 7]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device number in [0, 7]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitForTermRead</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Terminal read or write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="58" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1a272b1dc7db5bdf9bb32ba4ef6b867817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getTime</definition>
+        <argsstring>(cpu_t *resultAddress)</argsstring>
+        <name>getTime</name>
+        <param>
+          <type>cpu_t *</type>
+          <declname>resultAddress</declname>
+        </param>
+        <briefdescription>
+<para>SYS6: stores the real time since the beginning of the process&apos; execution in the provided address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resultAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address where the real time will be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="68" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1a8dfc1fcdd91191bb7f53c93d8c244908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clockWait</definition>
+        <argsstring>()</argsstring>
+        <name>clockWait</name>
+        <briefdescription>
+<para>SYS7: blocks the process until the next Interval Timer tick. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="74" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="syscalls_8h_1a08cd785b0bf1e92f481f167f52b4ae25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getSupportPtr</definition>
+        <argsstring>(support_t **resultAddress)</argsstring>
+        <name>getSupportPtr</name>
+        <param>
+          <type><ref refid="structsupport__t" kindref="compound">support_t</ref> **</type>
+          <declname>resultAddress</declname>
+        </param>
+        <briefdescription>
+<para>SYS8: stores the pointer to the process&apos; support structure in the provided address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resultAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address where the support structure will be stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/syscalls.h" line="83" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="83" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>SYSCALLS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSCALLS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createProcess(state_t<sp/>*<sp/>statep,<sp/><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>*<sp/>supportp);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>termProcess();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>passeren();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>verhogen(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ioWait(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intlNo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dNum,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>waitForTermRea);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getTime(cpu_t<sp/>*<sp/>resultAddress);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clockWait();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getSupportPtr(<ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>**<sp/>resultAddress);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/syscalls.h"/>
+  </compounddef>
+</doxygen>

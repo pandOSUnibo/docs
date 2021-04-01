@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="initial_8h" kind="file" language="C++">
+    <compoundname>initial.h</compoundname>
+    <includes refid="pandos__const_8h" local="yes">pandos_const.h</includes>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="2">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/initial.h</label>
+        <link refid="initial_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="initial_8h_1a9ead6eb59ab991ef0ef9e6061ccdb168" prot="public" static="no">
+        <name>PASSVEC_LOCATION</name>
+        <initializer>0x0FFFF900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="18" column="9" bodyfile="/home/circleci/docs/h/initial.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="initial_8h_1a5cc9248acb67158f641502c0d83db518" prot="public" static="no">
+        <name>TLBSP_START</name>
+        <initializer>KERNELSTACK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="19" column="9" bodyfile="/home/circleci/docs/h/initial.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="initial_8h_1a5b9b9ebb185b31fd52e864d2e2d4be95" prot="public" static="no">
+        <name>EXCSP_START</name>
+        <initializer>KERNELSTACK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="20" column="9" bodyfile="/home/circleci/docs/h/initial.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="initial_8h_1a76b05b8aa132f7da89408ed0cfe460a9" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int semaphore</definition>
+        <argsstring></argsstring>
+        <name>semaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="22" column="13" bodyfile="/home/circleci/docs/h/initial.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="initial_8h_1ac2a03a37b79289cce22eac3769142654" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int processCount</definition>
+        <argsstring></argsstring>
+        <name>processCount</name>
+        <briefdescription>
+<para>Number of active processes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="27" column="21" declfile="/home/circleci/docs/h/initial.h" declline="27" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="initial_8h_1a02c049ab28773b6e169c554413ccf36a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int softBlockCount</definition>
+        <argsstring></argsstring>
+        <name>softBlockCount</name>
+        <briefdescription>
+<para>Number of processes blocked on device semaphores. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="33" column="21" declfile="/home/circleci/docs/h/initial.h" declline="33" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="initial_8h_1a2c4e7e1ef0984ed36ce1e060aceaa29d" prot="public" static="no" mutable="no">
+        <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+        <definition>pcb_t* readyQueue</definition>
+        <argsstring></argsstring>
+        <name>readyQueue</name>
+        <briefdescription>
+<para>Queue of processes that are ready to be executed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="39" column="14" declfile="/home/circleci/docs/h/initial.h" declline="39" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="initial_8h_1a3d2f690020f58a9d4c0826ac7fedb528" prot="public" static="no" mutable="no">
+        <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
+        <definition>pcb_t* currentProcess</definition>
+        <argsstring></argsstring>
+        <name>currentProcess</name>
+        <briefdescription>
+<para>Current active process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="44" column="14" declfile="/home/circleci/docs/h/initial.h" declline="44" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="initial_8h_1a04a7533d7d03ced2337832f6eda42745" prot="public" static="no" mutable="no">
+        <type>semaphore</type>
+        <definition>semaphore semDevices[DEVICE_TYPES][DEVICE_INSTANCES]</definition>
+        <argsstring>[DEVICE_TYPES][DEVICE_INSTANCES]</argsstring>
+        <name>semDevices</name>
+        <briefdescription>
+<para>Semaphores for non-timer devices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="50" column="18" declfile="/home/circleci/docs/h/initial.h" declline="50" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="initial_8h_1a8ee3d657e8d45f9f7c2633bf8c827c72" prot="public" static="no" mutable="no">
+        <type>semaphore</type>
+        <definition>semaphore semIntTimer</definition>
+        <argsstring></argsstring>
+        <name>semIntTimer</name>
+        <briefdescription>
+<para>Semaphore for the Interval Timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="56" column="18" declfile="/home/circleci/docs/h/initial.h" declline="56" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="initial_8h_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The entry point for pandOS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int The exit code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/initial.h" line="63" column="5" declfile="/home/circleci/docs/h/initial.h" declline="63" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Nucleus Initialization. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-03-14</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>INITIAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INITIAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PASSVEC_LOCATION<sp/>0x0FFFF900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TLBSP_START<sp/>KERNELSTACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXCSP_START<sp/>KERNELSTACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>semaphore;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="initial_8h_1ac2a03a37b79289cce22eac3769142654" kindref="member">processCount</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="initial_8h_1a02c049ab28773b6e169c554413ccf36a" kindref="member">softBlockCount</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*<ref refid="initial_8h_1a2c4e7e1ef0984ed36ce1e060aceaa29d" kindref="member">readyQueue</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>*<ref refid="initial_8h_1a3d2f690020f58a9d4c0826ac7fedb528" kindref="member">currentProcess</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>semaphore<sp/><ref refid="initial_8h_1a04a7533d7d03ced2337832f6eda42745" kindref="member">semDevices</ref>[DEVICE_TYPES][DEVICE_INSTANCES];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>semaphore<sp/><ref refid="initial_8h_1a8ee3d657e8d45f9f7c2633bf8c827c72" kindref="member">semIntTimer</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="initial_8h_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/initial.h"/>
+  </compounddef>
+</doxygen>

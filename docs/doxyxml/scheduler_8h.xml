@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scheduler_8h" kind="file" language="C++">
+    <compoundname>scheduler.h</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="scheduler_8h_1a1ad818697bb6c97836326051cfff0f1d" prot="public" static="no" mutable="no">
+        <type>cpu_t</type>
+        <definition>cpu_t sliceStart</definition>
+        <argsstring></argsstring>
+        <name>sliceStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/scheduler.h" line="15" column="14" declfile="/home/circleci/docs/h/scheduler.h" declline="15" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="scheduler_8h_1a7d06701ac073c331c83519e3909b7fce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void schedule</definition>
+        <argsstring>()</argsstring>
+        <name>schedule</name>
+        <briefdescription>
+<para>Selects a process and executes it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>The selected process will be also stored in currentProcess (defined in <ref refid="initial_8h" kindref="compound">initial.h</ref>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/scheduler.h" line="23" column="6" declfile="/home/circleci/docs/h/scheduler.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Nucleus Initialization. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-03-14</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>SCHEDULER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCHEDULER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>cpu_t<sp/>sliceStart;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scheduler_8h_1a7d06701ac073c331c83519e3909b7fce" kindref="member">schedule</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/scheduler.h"/>
+  </compounddef>
+</doxygen>

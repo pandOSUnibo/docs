@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="interrupts_8h" kind="file" language="C++">
+    <compoundname>interrupts.h</compoundname>
+    <includes local="no">umps3/umps/types.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/interrupts.h</label>
+        <link refid="interrupts_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="interrupts_8h_1ad98ad247062fd3d7a8bf6223dad8a843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void interruptsHandler</definition>
+        <argsstring>(state_t *exceptionState)</argsstring>
+        <name>interruptsHandler</name>
+        <param>
+          <type>state_t *</type>
+          <declname>exceptionState</declname>
+        </param>
+        <briefdescription>
+<para>Handles interrupts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exceptionState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the process state at the time of the interrupt. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/interrupts.h" line="23" column="6" declfile="/home/circleci/docs/h/interrupts.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interrupts handler. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-03-14</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>INTERRUPTS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTERRUPTS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;umps3/umps/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interrupts_8h_1ad98ad247062fd3d7a8bf6223dad8a843" kindref="member">interruptsHandler</ref>(state_t<sp/>*exceptionState);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/interrupts.h"/>
+  </compounddef>
+</doxygen>

@@ -9,7 +9,7 @@
       </node>
       <node id="4">
         <label>pandos_const.h</label>
-        <link refid="pandos__const_8h"/>
+        <link refid="pandos__const_8h_source"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
@@ -190,7 +190,7 @@
     <detaileddescription>
 <para><simplesect kind="authors"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
 </simplesect>
-<simplesect kind="version"><para>0.1.0 </para>
+<simplesect kind="version"><para>0.2.0 </para>
 </simplesect>
 <simplesect kind="date"><para>2021-02-13 </para>
 </simplesect>

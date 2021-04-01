@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structcontext__t" kind="struct" language="C++" prot="public">
+    <compoundname>context_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcontext__t_1adeb091664595ba543808705442f0b318" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int context_t::c_stackPtr</definition>
+        <argsstring></argsstring>
+        <name>c_stackPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="23" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcontext__t_1a1aeb8f0d0519e07c3be7fb2bc9fc20e7" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int context_t::c_status</definition>
+        <argsstring></argsstring>
+        <name>c_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="24" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcontext__t_1a4c07fe81c9ea0fd34bdd61cc2ba25fbc" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int context_t::c_pc</definition>
+        <argsstring></argsstring>
+        <name>c_pc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="25" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/circleci/docs/h/pandos_types.h" line="22" column="24" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structcontext__t_1a4c07fe81c9ea0fd34bdd61cc2ba25fbc" prot="public" virt="non-virtual"><scope>context_t</scope><name>c_pc</name></member>
+      <member refid="structcontext__t_1adeb091664595ba543808705442f0b318" prot="public" virt="non-virtual"><scope>context_t</scope><name>c_stackPtr</name></member>
+      <member refid="structcontext__t_1a1aeb8f0d0519e07c3be7fb2bc9fc20e7" prot="public" virt="non-virtual"><scope>context_t</scope><name>c_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
