@@ -15,7 +15,7 @@
       </node>
       <node id="3">
         <label>pandos_const.h</label>
-        <link refid="pandos__const_8h_source"/>
+        <link refid="pandos__const_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -42,7 +42,7 @@
       </node>
       <node id="6">
         <label>/home/circleci/docs/h/syscalls.h</label>
-        <link refid="syscalls_8h_source"/>
+        <link refid="syscalls_8h"/>
       </node>
       <node id="2">
         <label>/home/circleci/docs/h/asl.h</label>
@@ -178,6 +178,20 @@
         </inbodydescription>
         <location file="/home/circleci/docs/h/pandos_types.h" line="72" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="72" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int semaphore</definition>
+        <argsstring></argsstring>
+        <name>semaphore</name>
+        <briefdescription>
+<para>Represents a semaphore. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="77" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>This header file contains utility types definitions. </para>
@@ -191,7 +205,7 @@
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;umps3/umps/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__const_8h" kindref="compound">pandos_const.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cpu_t;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
@@ -233,7 +247,9 @@
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72" refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" kindref="member">bool</ref>;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77" refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/pandos_types.h"/>
   </compounddef>

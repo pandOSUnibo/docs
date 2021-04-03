@@ -15,7 +15,7 @@
       </node>
       <node id="4">
         <label>pandos_const.h</label>
-        <link refid="pandos__const_8h_source"/>
+        <link refid="pandos__const_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
@@ -82,7 +82,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Exceptions handler. </para>
+<para>Exception handler functions. </para>
     </briefdescription>
     <detaileddescription>
 <para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>

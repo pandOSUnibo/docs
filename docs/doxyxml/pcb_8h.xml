@@ -18,7 +18,7 @@
       </node>
       <node id="2">
         <label>pandos_const.h</label>
-        <link refid="pandos__const_8h_source"/>
+        <link refid="pandos__const_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -441,7 +441,7 @@
 <codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>PCB_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PCB_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pandos_const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__const_8h" kindref="compound">pandos_const.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pcb_8h_1a5cbd92344b2dae9f317b956359b5f2d9" kindref="member">initPcbs</ref>();</highlight></codeline>

@@ -38,7 +38,6 @@
     <member refid="initial_8h_1a9ead6eb59ab991ef0ef9e6061ccdb168" kind="define"><name>PASSVEC_LOCATION</name></member>
     <member refid="initial_8h_1a5cc9248acb67158f641502c0d83db518" kind="define"><name>TLBSP_START</name></member>
     <member refid="initial_8h_1a5b9b9ebb185b31fd52e864d2e2d4be95" kind="define"><name>EXCSP_START</name></member>
-    <member refid="initial_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kind="typedef"><name>semaphore</name></member>
     <member refid="initial_8h_1ac2a03a37b79289cce22eac3769142654" kind="variable"><name>processCount</name></member>
     <member refid="initial_8h_1a02c049ab28773b6e169c554413ccf36a" kind="variable"><name>softBlockCount</name></member>
     <member refid="initial_8h_1a2c4e7e1ef0984ed36ce1e060aceaa29d" kind="variable"><name>readyQueue</name></member>
@@ -187,6 +186,7 @@
     <member refid="pandos__types_8h_1a64a848403f23a0af63c3e3fdf2c88d03" kind="typedef"><name>pcb_PTR</name></member>
     <member refid="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" kind="typedef"><name>size_t</name></member>
     <member refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" kind="typedef"><name>bool</name></member>
+    <member refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kind="typedef"><name>semaphore</name></member>
   </compound>
   <compound refid="pcb_8h" kind="file"><name>pcb.h</name>
     <member refid="pcb_8h_1a5cbd92344b2dae9f317b956359b5f2d9" kind="function"><name>initPcbs</name></member>

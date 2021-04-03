@@ -45,7 +45,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Interrupts handler. </para>
+<para>Interrupt handler functions. </para>
     </briefdescription>
     <detaileddescription>
 <para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>

@@ -9,7 +9,7 @@
       </node>
       <node id="4">
         <label>pandos_const.h</label>
-        <link refid="pandos__const_8h_source"/>
+        <link refid="pandos__const_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
@@ -93,7 +93,7 @@
         <argsstring>(semaphore *semAdd)</argsstring>
         <name>passeren</name>
         <param>
-          <type>semaphore *</type>
+          <type><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref> *</type>
           <declname>semAdd</declname>
         </param>
         <briefdescription>
@@ -121,7 +121,7 @@
         <argsstring>(semaphore *semAdd)</argsstring>
         <name>verhogen</name>
         <param>
-          <type>semaphore *</type>
+          <type><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref> *</type>
           <declname>semAdd</declname>
         </param>
         <briefdescription>
@@ -270,8 +270,18 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Syscall handler functions. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-03-14</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
@@ -281,21 +291,21 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createProcess(state_t<sp/>*<sp/>statep,<sp/><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>*<sp/>supportp);</highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1aa2796039431158b3273acbdd4e3e0e38" kindref="member">createProcess</ref>(state_t<sp/>*<sp/>statep,<sp/><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>*<sp/>supportp);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>termProcess();</highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1a255d4de0a1d808e3a36be8ceb5c0f041" kindref="member">termProcess</ref>();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>passeren(semaphore<sp/>*semAdd);</highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1acce2eaad2e30a05d83f37e3d76e0c75e" kindref="member">passeren</ref>(<ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref><sp/>*semAdd);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>verhogen(semaphore<sp/>*semAdd);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/><ref refid="syscalls_8h_1ad1139ce5636ef1e9110fb3254115a39b" kindref="member">verhogen</ref>(<ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref><sp/>*semAdd);</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ioWait(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intlNo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dNum,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>waitForTermRea);</highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1a9ad2fd60c036f245c78b039c623bf146" kindref="member">ioWait</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intlNo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dNum,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>waitForTermRea);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getTime(cpu_t<sp/>*<sp/>resultAddress);</highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1a272b1dc7db5bdf9bb32ba4ef6b867817" kindref="member">getTime</ref>(cpu_t<sp/>*<sp/>resultAddress);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clockWait();</highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1a8dfc1fcdd91191bb7f53c93d8c244908" kindref="member">clockWait</ref>();</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getSupportPtr(<ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>**<sp/>resultAddress);</highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="syscalls_8h_1a08cd785b0bf1e92f481f167f52b4ae25" kindref="member">getSupportPtr</ref>(<ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>**<sp/>resultAddress);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>

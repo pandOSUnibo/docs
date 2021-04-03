@@ -37,7 +37,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Nucleus Initialization. </para>
+<para>Process scheduler functions. </para>
     </briefdescription>
     <detaileddescription>
 <para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
