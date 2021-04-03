@@ -204,14 +204,14 @@
     <member refid="pcb_8h_1ac842b91f7c9963383016a95ae09f903c" kind="function"><name>outChild</name></member>
   </compound>
   <compound refid="scheduler_8h" kind="file"><name>scheduler.h</name>
-    <member refid="scheduler_8h_1a1ad818697bb6c97836326051cfff0f1d" kind="variable"><name>sliceStart</name></member>
+    <member refid="scheduler_8h_1a02a10c74ba06f8ab517805500f9aeade" kind="variable"><name>sliceStart</name></member>
     <member refid="scheduler_8h_1a7d06701ac073c331c83519e3909b7fce" kind="function"><name>schedule</name></member>
   </compound>
   <compound refid="syscalls_8h" kind="file"><name>syscalls.h</name>
     <member refid="syscalls_8h_1aa2796039431158b3273acbdd4e3e0e38" kind="function"><name>createProcess</name></member>
     <member refid="syscalls_8h_1a255d4de0a1d808e3a36be8ceb5c0f041" kind="function"><name>termProcess</name></member>
-    <member refid="syscalls_8h_1ae87f129601301d841bd0a6cc687153b8" kind="function"><name>passeren</name></member>
-    <member refid="syscalls_8h_1a710f7fdef70fa26c99ee1d9956c56449" kind="function"><name>verhogen</name></member>
+    <member refid="syscalls_8h_1acce2eaad2e30a05d83f37e3d76e0c75e" kind="function"><name>passeren</name></member>
+    <member refid="syscalls_8h_1ad1139ce5636ef1e9110fb3254115a39b" kind="function"><name>verhogen</name></member>
     <member refid="syscalls_8h_1a9ad2fd60c036f245c78b039c623bf146" kind="function"><name>ioWait</name></member>
     <member refid="syscalls_8h_1a272b1dc7db5bdf9bb32ba4ef6b867817" kind="function"><name>getTime</name></member>
     <member refid="syscalls_8h_1a8dfc1fcdd91191bb7f53c93d8c244908" kind="function"><name>clockWait</name></member>

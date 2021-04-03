@@ -87,11 +87,15 @@
         </inbodydescription>
         <location file="/home/circleci/docs/h/syscalls.h" line="32" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="32" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="syscalls_8h_1ae87f129601301d841bd0a6cc687153b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="syscalls_8h_1acce2eaad2e30a05d83f37e3d76e0c75e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void passeren</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(semaphore *semAdd)</argsstring>
         <name>passeren</name>
+        <param>
+          <type>semaphore *</type>
+          <declname>semAdd</declname>
+        </param>
         <briefdescription>
 <para>SYS3 (P): performs a P operation on the semaphore provided. </para>
         </briefdescription>
@@ -111,13 +115,13 @@
         </inbodydescription>
         <location file="/home/circleci/docs/h/syscalls.h" line="39" column="6" declfile="/home/circleci/docs/h/syscalls.h" declline="39" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="syscalls_8h_1a710f7fdef70fa26c99ee1d9956c56449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="syscalls_8h_1ad1139ce5636ef1e9110fb3254115a39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
         <definition>pcb_t* verhogen</definition>
-        <argsstring>(int *semAdd)</argsstring>
+        <argsstring>(semaphore *semAdd)</argsstring>
         <name>verhogen</name>
         <param>
-          <type>int *</type>
+          <type>semaphore *</type>
           <declname>semAdd</declname>
         </param>
         <briefdescription>
@@ -281,9 +285,9 @@
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>termProcess();</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>passeren();</highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>passeren(semaphore<sp/>*semAdd);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>verhogen(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*semAdd);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref>*<sp/>verhogen(semaphore<sp/>*semAdd);</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ioWait(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intlNo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dNum,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>waitForTermRea);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>

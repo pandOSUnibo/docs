@@ -3,9 +3,9 @@
   <compounddef id="scheduler_8h" kind="file" language="C++">
     <compoundname>scheduler.h</compoundname>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="scheduler_8h_1a1ad818697bb6c97836326051cfff0f1d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="scheduler_8h_1a02a10c74ba06f8ab517805500f9aeade" prot="public" static="no" mutable="no">
         <type>cpu_t</type>
-        <definition>cpu_t sliceStart</definition>
+        <definition>volatile cpu_t sliceStart</definition>
         <argsstring></argsstring>
         <name>sliceStart</name>
         <briefdescription>
@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/scheduler.h" line="15" column="14" declfile="/home/circleci/docs/h/scheduler.h" declline="15" declcolumn="14"/>
+        <location file="/home/circleci/docs/h/scheduler.h" line="15" column="23" declfile="/home/circleci/docs/h/scheduler.h" declline="15" declcolumn="23"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -55,7 +55,7 @@
 <codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>SCHEDULER_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCHEDULER_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>cpu_t<sp/>sliceStart;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>cpu_t<sp/>sliceStart;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scheduler_8h_1a7d06701ac073c331c83519e3909b7fce" kindref="member">schedule</ref>();</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
