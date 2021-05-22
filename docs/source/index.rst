@@ -20,10 +20,14 @@ This documentation describes the implementation of pandOS by Luca Donno, Antonio
    
    asl
    exceptions
+   init_proc
    initial
    interrupts
    pandos_const
    pandos_types
    pcb
    scheduler
+   support
+   sys_support
    syscalls
+   vm_support

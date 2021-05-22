@@ -6,6 +6,9 @@
     <includedby refid="pandos__types_8h" local="yes">/home/circleci/docs/h/pandos_types.h</includedby>
     <includedby refid="initial_8h" local="yes">/home/circleci/docs/h/initial.h</includedby>
     <includedby refid="pcb_8h" local="yes">/home/circleci/docs/h/pcb.h</includedby>
+    <includedby refid="support_8h" local="yes">/home/circleci/docs/h/support.h</includedby>
+    <includedby refid="sys__support_8h" local="yes">/home/circleci/docs/h/sys_support.h</includedby>
+    <includedby refid="vm__support_8h" local="yes">/home/circleci/docs/h/vm_support.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>/home/circleci/docs/h/pandos_const.h</label>
@@ -22,21 +25,41 @@
         <label>/home/circleci/docs/h/exceptions.h</label>
         <link refid="exceptions_8h"/>
       </node>
-      <node id="6">
+      <node id="5">
+        <label>/home/circleci/docs/h/init_proc.h</label>
+        <link refid="init__proc_8h"/>
+      </node>
+      <node id="8">
+        <label>/home/circleci/docs/h/support.h</label>
+        <link refid="support_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>/home/circleci/docs/h/pcb.h</label>
         <link refid="pcb_8h"/>
+      </node>
+      <node id="10">
+        <label>/home/circleci/docs/h/sys_support.h</label>
+        <link refid="sys__support_8h"/>
       </node>
       <node id="1">
         <label>/home/circleci/docs/h/pandos_const.h</label>
         <link refid="pandos__const_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="7">
+      <node id="11">
         <label>/home/circleci/docs/h/syscalls.h</label>
         <link refid="syscalls_8h"/>
       </node>
@@ -44,7 +67,11 @@
         <label>/home/circleci/docs/h/asl.h</label>
         <link refid="asl_8h"/>
       </node>
-      <node id="5">
+      <node id="9">
+        <label>/home/circleci/docs/h/vm_support.h</label>
+        <link refid="vm__support_8h"/>
+      </node>
+      <node id="6">
         <label>/home/circleci/docs/h/initial.h</label>
         <link refid="initial_8h"/>
       </node>
@@ -60,6 +87,14 @@
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -825,6 +860,17 @@
         </inbodydescription>
         <location file="/home/circleci/docs/h/pandos_const.h" line="106" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="106" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="pandos__const_8h_1a78adf66fd098fa61a23ece5c3b4b482d" prot="public" static="no">
+        <name>CACHED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="107" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a92ec4849e1aec11002aa2925f6343da3" prot="public" static="no">
         <name>DEV0ON</name>
         <initializer>0x00000001</initializer>
@@ -834,7 +880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="110" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="110" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="111" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a708abd782396839568216235fdb88c57" prot="public" static="no">
         <name>DEV1ON</name>
@@ -845,7 +891,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="111" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="112" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a3646030bb6820bd104184f17110321a1" prot="public" static="no">
         <name>DEV2ON</name>
@@ -856,7 +902,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="112" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="112" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="113" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a586e9a6b92ee21a72f97bf76a0b29e81" prot="public" static="no">
         <name>DEV3ON</name>
@@ -867,7 +913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="113" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="113" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="114" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a0c9edce3aaeef7759e46abafb90a1f91" prot="public" static="no">
         <name>DEV4ON</name>
@@ -878,7 +924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="114" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="114" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="115" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1af7b3f5b338bede77b3822d062353309d" prot="public" static="no">
         <name>DEV5ON</name>
@@ -889,7 +935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="115" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="115" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="116" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1aa5ca652d28cea232672037e9a65cf5fe" prot="public" static="no">
         <name>DEV6ON</name>
@@ -900,7 +946,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="116" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="116" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="117" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad3c1b5cedd0e7012016881e28b0983ac" prot="public" static="no">
         <name>DEV7ON</name>
@@ -911,7 +957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="117" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="117" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="118" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a25337434cb224260493151e2176e7f73" prot="public" static="no">
         <name>OKCHARTRANS</name>
@@ -922,7 +968,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="120" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="120" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="121" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a77198a963ee7d4e6280e2162229a65d3" prot="public" static="no">
         <name>TRANSMITCHAR</name>
@@ -933,7 +979,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="121" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="121" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="122" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad8e69f52f5febf252801c228c956ccab" prot="public" static="no">
         <name>SEEKTOCYL</name>
@@ -944,7 +990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="123" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="123" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="124" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad92f933721515645b98e20eb83bb0db3" prot="public" static="no">
         <name>DISKREAD</name>
@@ -955,7 +1001,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="124" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="124" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="125" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a7e693b381534412a7fa4db03be53337d" prot="public" static="no">
         <name>DISKWRITE</name>
@@ -966,7 +1012,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="125" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="125" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="126" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a2fa581c4d88f4498098f80acf6254af2" prot="public" static="no">
         <name>FLASHREAD</name>
@@ -977,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="126" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="126" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="127" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a2c0b326c57b91ce63e77b8dbd6bcc5f3" prot="public" static="no">
         <name>FLASHWRITE</name>
@@ -988,7 +1034,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="127" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="127" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="128" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a502f49daf0362cc62ecceedfea00c313" prot="public" static="no">
         <name>BACKREAD</name>
@@ -999,7 +1045,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="128" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="128" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="129" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a70ca5470459c8a1e1ca3e10769701cc8" prot="public" static="no">
         <name>BACKWRITE</name>
@@ -1010,7 +1056,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="129" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="129" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="130" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a1b9eb97aff33a89a42dcbb9fc26b13f0" prot="public" static="no">
         <name>UPROCSTARTADDR</name>
@@ -1021,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="133" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="133" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="134" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ae6eca68e7098d0804f368853a18e1635" prot="public" static="no">
         <name>USERSTACKTOP</name>
@@ -1032,7 +1078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="134" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="134" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="135" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a38840a2e5b31b63b42f42fbe220cb1ad" prot="public" static="no">
         <name>KERNELSTACK</name>
@@ -1043,7 +1089,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="135" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="135" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="136" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a884c794595c4aa480df9022648c29564" prot="public" static="no">
         <name>SHARED</name>
@@ -1054,7 +1100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="138" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="138" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="139" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a5e151c615eda34903514212f05a5ccf8" prot="public" static="no">
         <name>PRIVATE</name>
@@ -1065,7 +1111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="139" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="139" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="140" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad76d1750a6cdeebd506bfcd6752554d2" prot="public" static="no">
         <name>ON</name>
@@ -1076,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="143" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="143" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="144" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a29e413f6725b2ba32d165ffaa35b01e5" prot="public" static="no">
         <name>OFF</name>
@@ -1087,7 +1133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="144" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="144" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="145" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1aba51915c87d64af47fb1cc59348961c9" prot="public" static="no">
         <name>OK</name>
@@ -1098,7 +1144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="145" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="145" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="146" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1af22d54bd4d558803b5ccbc6eb21f83b2" prot="public" static="no">
         <name>NOPROC</name>
@@ -1109,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="146" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="146" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="147" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a3955a9908d98126c4e89ea6a3b250d8e" prot="public" static="no">
         <name>BYTELENGTH</name>
@@ -1120,7 +1166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="147" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="147" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="148" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a134385a98ff5ca232191762e69589371" prot="public" static="no">
         <name>PSECOND</name>
@@ -1131,7 +1177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="149" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="149" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="150" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ae586204918bfbea259810829a239d886" prot="public" static="no">
         <name>TIMESLICE</name>
@@ -1143,7 +1189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="150" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="150" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="151" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a9e5c19968af97bd64f46650ec8732318" prot="public" static="no">
         <name>NEVER</name>
@@ -1154,7 +1200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="151" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="151" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="152" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a94212be2394d2d37d9dfd33d07d82dba" prot="public" static="no">
         <name>SECOND</name>
@@ -1165,7 +1211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="152" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="152" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="153" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ab7f9358e56e6cbbb79a56e7ba13da5b0" prot="public" static="no">
         <name>STATESIZE</name>
@@ -1176,7 +1222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="153" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="153" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="154" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1adce57b1b3a5f583a9eecd9bc9b66b81e" prot="public" static="no">
         <name>DEVICECNT</name>
@@ -1187,7 +1233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="154" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="154" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="155" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a7ec11e2ad53c8b8f69c7047a6f9eb1e8" prot="public" static="no">
         <name>MAXSTRLENG</name>
@@ -1198,7 +1244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="155" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="155" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="156" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a8f7eab640a38c61111ed2beda34496e6" prot="public" static="no">
         <name>DELAYASID</name>
@@ -1209,7 +1255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="157" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="157" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="158" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ac5df7b28e6c4828a832df1542f2bfe43" prot="public" static="no">
         <name>KUSEG3SECTNO</name>
@@ -1220,7 +1266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="158" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="158" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="159" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1aaedc3f82c05be8d44fcfc13268d7fd7f" prot="public" static="no">
         <name>VMDISK</name>
@@ -1231,7 +1277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="160" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="160" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="161" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a7fd108a102df19dfc97ef2bf1d40e585" prot="public" static="no">
         <name>MAXPAGES</name>
@@ -1242,7 +1288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="161" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="161" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="162" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1aee1fc266bc2b905551e4665333f38ed7" prot="public" static="no">
         <name>USERPGTBLSIZE</name>
@@ -1253,7 +1299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="162" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="162" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="163" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a9533e05a291e606d6dff8a61a0720c01" prot="public" static="no">
         <name>OSFRAMES</name>
@@ -1264,7 +1310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="163" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="163" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="164" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a9a906bd6b933112f1433c2a1dd0155bf" prot="public" static="no">
         <name>FLASHPOOLSTART</name>
@@ -1275,7 +1321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="165" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="165" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="166" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a25ec12bd259ee7ed8b279e3692a06ad1" prot="public" static="no">
         <name>DISKPOOLSTART</name>
@@ -1286,7 +1332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="166" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="166" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="167" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a41ba8a052ae79025f624ddc279dcbc36" prot="public" static="no">
         <name>FRAMEPOOLSTART</name>
@@ -1297,7 +1343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="167" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="167" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="168" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad146d192ab00e913eb027d11d9dcaa8c" prot="public" static="no">
         <name>RAMTOP</name>
@@ -1309,7 +1355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="169" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="169" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="170" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad6041eb02bc264c1369f983083b9a57f" prot="public" static="no">
         <name>DISKBACK</name>
@@ -1320,7 +1366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="172" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="172" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="173" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a0de7211e6c1b4291fac54eaaa21c1458" prot="public" static="no">
         <name>FLASHBACK</name>
@@ -1331,7 +1377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="173" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="173" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="174" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1abcd566d199f9aef19ef550fdb4244d01" prot="public" static="no">
         <name>BACKINGSTORE</name>
@@ -1342,7 +1388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="174" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="174" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="175" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a2e5091b3296b6d29e0f8242c0d53727f" prot="public" static="no">
         <name>UPROCMAX</name>
@@ -1353,7 +1399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="176" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="176" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="177" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a9d1db42a5fe2d7bf9f4958db88a3029b" prot="public" static="no">
         <name>POOLSIZE</name>
@@ -1364,7 +1410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="177" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="177" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="178" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a0f424892873146aecd5f29a06ad0d545" prot="public" static="no">
         <name>INTIMER</name>
@@ -1376,7 +1422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="180" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="180" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="181" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1ad4e81dc193f022145921478b20fee1f7" prot="public" static="no">
         <name>MAXPLT</name>
@@ -1388,7 +1434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="181" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="181" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="182" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1aa4a617c1de6d3c5d1e751cfdd90c02dc" prot="public" static="no">
         <name>EXCSTATE</name>
@@ -1400,7 +1446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="182" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="182" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="183" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a93df78dfd65a4b92e9ef571caf1805d6" prot="public" static="no">
         <name>MUSEC_TO_TICKS</name>
@@ -1413,7 +1459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="183" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="183" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="184" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a4a014b7e9be1d2e2a6af6528dfef8fc6" prot="public" static="no">
         <name>DEVICE_TYPES</name>
@@ -1425,7 +1471,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="185" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="185" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="186" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a16c3a5a0aec75fa03fed53ef0b7cabbe" prot="public" static="no">
         <name>DEVICE_INSTANCES</name>
@@ -1437,7 +1483,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="186" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="186" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="187" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a159719c70cea882d9a5a87170b77a95e" prot="public" static="no">
         <name>MAXPOINT</name>
@@ -1449,7 +1495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="188" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="188" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="189" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="189" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="pandos__const_8h_1a8b59ce3716689db66d5dbebf7ded99f0" prot="public" static="no">
         <name>MINPOINT</name>
@@ -1461,7 +1507,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_const.h" line="189" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="189" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_const.h" line="190" column="9" bodyfile="/home/circleci/docs/h/pandos_const.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1571,92 +1617,93 @@
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//Index<sp/>register<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRESENTFLAG<sp/>0x80000000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CACHED<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Device<sp/>register<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV0ON<sp/>0x00000001</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV1ON<sp/>0x00000002</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV2ON<sp/>0x00000004</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV3ON<sp/>0x00000008</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV4ON<sp/>0x00000010</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV5ON<sp/>0x00000020</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV6ON<sp/>0x00000040</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV7ON<sp/>0x00000080</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Device<sp/>register<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV0ON<sp/>0x00000001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV1ON<sp/>0x00000002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV2ON<sp/>0x00000004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV3ON<sp/>0x00000008</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV4ON<sp/>0x00000010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV5ON<sp/>0x00000020</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV6ON<sp/>0x00000040</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEV7ON<sp/>0x00000080</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OKCHARTRANS<sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRANSMITCHAR<sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEEKTOCYL<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKREAD<sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKWRITE<sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHREAD<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHWRITE<sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKREAD<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKWRITE<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OKCHARTRANS<sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRANSMITCHAR<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEEKTOCYL<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKREAD<sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKWRITE<sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHREAD<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHWRITE<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKREAD<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKWRITE<sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Memory<sp/>Constants<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCSTARTADDR<sp/>0x800000B0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USERSTACKTOP<sp/><sp/><sp/>0xC0000000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KERNELSTACK<sp/><sp/><sp/><sp/>0x20001000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Memory<sp/>Constants<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCSTARTADDR<sp/>0x800000B0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USERSTACKTOP<sp/><sp/><sp/>0xC0000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KERNELSTACK<sp/><sp/><sp/><sp/>0x20001000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHARED<sp/><sp/>0x3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIVATE<sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHARED<sp/><sp/>0x3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIVATE<sp/>0x2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Utility<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOPROC<sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BYTELENGTH<sp/>8</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PSECOND<sp/><sp/><sp/><sp/>100000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="150" refid="pandos__const_8h_1ae586204918bfbea259810829a239d886" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMESLICE<sp/><sp/>5000<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="151"><highlight class="preprocessor">#define<sp/>NEVER<sp/><sp/><sp/><sp/><sp/><sp/>0x7FFFFFFF</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECOND<sp/><sp/><sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATESIZE<sp/><sp/>0x8C</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICECNT<sp/><sp/>(DEVINTNUM<sp/>*<sp/>DEVPERINT)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXSTRLENG<sp/>128</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DELAYASID<sp/><sp/><sp/><sp/>(UPROCMAX<sp/>+<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KUSEG3SECTNO<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VMDISK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPAGES<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USERPGTBLSIZE<sp/>MAXPAGES</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OSFRAMES<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHPOOLSTART<sp/>(RAMSTART<sp/>+<sp/>(OSFRAMES<sp/>*<sp/>PAGESIZE))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKPOOLSTART<sp/><sp/>(FLASHPOOLSTART<sp/>+<sp/>(DEVPERINT<sp/>*<sp/>PAGESIZE))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FRAMEPOOLSTART<sp/>(DISKPOOLSTART<sp/>+<sp/>(DEVPERINT<sp/>*<sp/>PAGESIZE))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAMTOP(T)<sp/>((T)<sp/>=<sp/>((*((int<sp/>*)RAMBASEADDR))<sp/>+<sp/>(*((int<sp/>*)RAMBASESIZE))))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Utility<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOPROC<sp/><sp/><sp/><sp/><sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BYTELENGTH<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PSECOND<sp/><sp/><sp/><sp/>100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="pandos__const_8h_1ae586204918bfbea259810829a239d886" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMESLICE<sp/><sp/>5000<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor">#define<sp/>NEVER<sp/><sp/><sp/><sp/><sp/><sp/>0x7FFFFFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECOND<sp/><sp/><sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATESIZE<sp/><sp/>0x8C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICECNT<sp/><sp/>(DEVINTNUM<sp/>*<sp/>DEVPERINT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXSTRLENG<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DELAYASID<sp/><sp/><sp/><sp/>(UPROCMAX<sp/>+<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KUSEG3SECTNO<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VMDISK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPAGES<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USERPGTBLSIZE<sp/>MAXPAGES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OSFRAMES<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHPOOLSTART<sp/>(RAMSTART<sp/>+<sp/>(OSFRAMES<sp/>*<sp/>PAGESIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKPOOLSTART<sp/><sp/>(FLASHPOOLSTART<sp/>+<sp/>(DEVPERINT<sp/>*<sp/>PAGESIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FRAMEPOOLSTART<sp/>(DISKPOOLSTART<sp/>+<sp/>(DEVPERINT<sp/>*<sp/>PAGESIZE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RAMTOP(T)<sp/>((T)<sp/>=<sp/>((*((int<sp/>*)RAMBASEADDR))<sp/>+<sp/>(*((int<sp/>*)RAMBASESIZE))))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKBACK<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHBACK<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKINGSTORE<sp/>FLASHBACK</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"></highlight></codeline>
-<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCMAX<sp/>8</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POOLSIZE<sp/>(UPROCMAX<sp/>*<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>Mikeyg<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180" refid="pandos__const_8h_1a0f424892873146aecd5f29a06ad0d545" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTIMER<sp/><sp/>100000UL<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="181" refid="pandos__const_8h_1ad4e81dc193f022145921478b20fee1f7" refkind="member"><highlight class="preprocessor">#define<sp/>MAXPLT<sp/><sp/><sp/>0xFFFFFFFFUL<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="182" refid="pandos__const_8h_1aa4a617c1de6d3c5d1e751cfdd90c02dc" refkind="member"><highlight class="preprocessor">#define<sp/>EXCSTATE<sp/>((state_t<sp/>*)<sp/>BIOSDATAPAGE)<sp/></highlight></codeline>
-<codeline lineno="183" refid="pandos__const_8h_1a93df78dfd65a4b92e9ef571caf1805d6" refkind="member"><highlight class="preprocessor">#define<sp/>MUSEC_TO_TICKS(T)<sp/>(T)<sp/>*<sp/>(*((cpu_t<sp/>*)TIMESCALEADDR))<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="185" refid="pandos__const_8h_1a4a014b7e9be1d2e2a6af6528dfef8fc6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_TYPES<sp/><sp/><sp/><sp/><sp/>6<sp/><sp/></highlight></codeline>
-<codeline lineno="186" refid="pandos__const_8h_1a16c3a5a0aec75fa03fed53ef0b7cabbe" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_INSTANCES<sp/>8<sp/><sp/></highlight></codeline>
-<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="188" refid="pandos__const_8h_1a159719c70cea882d9a5a87170b77a95e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOINT<sp/>((void<sp/>*)0xFFFFFFFF)<sp/></highlight></codeline>
-<codeline lineno="189" refid="pandos__const_8h_1a8b59ce3716689db66d5dbebf7ded99f0" refkind="member"><highlight class="preprocessor">#define<sp/>MINPOINT<sp/>((void<sp/>*)0x00000000)<sp/></highlight></codeline>
-<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISKBACK<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHBACK<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKINGSTORE<sp/>FLASHBACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCMAX<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POOLSIZE<sp/>(UPROCMAX<sp/>*<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>Mikeyg<sp/>constants<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="pandos__const_8h_1a0f424892873146aecd5f29a06ad0d545" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTIMER<sp/><sp/>100000UL<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182" refid="pandos__const_8h_1ad4e81dc193f022145921478b20fee1f7" refkind="member"><highlight class="preprocessor">#define<sp/>MAXPLT<sp/><sp/><sp/>0xFFFFFFFFUL<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="183" refid="pandos__const_8h_1aa4a617c1de6d3c5d1e751cfdd90c02dc" refkind="member"><highlight class="preprocessor">#define<sp/>EXCSTATE<sp/>((state_t<sp/>*)<sp/>BIOSDATAPAGE)<sp/></highlight></codeline>
+<codeline lineno="184" refid="pandos__const_8h_1a93df78dfd65a4b92e9ef571caf1805d6" refkind="member"><highlight class="preprocessor">#define<sp/>MUSEC_TO_TICKS(T)<sp/>(T)<sp/>*<sp/>(*((cpu_t<sp/>*)TIMESCALEADDR))<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="pandos__const_8h_1a4a014b7e9be1d2e2a6af6528dfef8fc6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_TYPES<sp/><sp/><sp/><sp/><sp/>6<sp/><sp/></highlight></codeline>
+<codeline lineno="187" refid="pandos__const_8h_1a16c3a5a0aec75fa03fed53ef0b7cabbe" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_INSTANCES<sp/>8<sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="pandos__const_8h_1a159719c70cea882d9a5a87170b77a95e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXPOINT<sp/>((void<sp/>*)0xFFFFFFFF)<sp/></highlight></codeline>
+<codeline lineno="190" refid="pandos__const_8h_1a8b59ce3716689db66d5dbebf7ded99f0" refkind="member"><highlight class="preprocessor">#define<sp/>MINPOINT<sp/>((void<sp/>*)0x00000000)<sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/pandos_const.h"/>
   </compounddef>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structswap__t" kind="struct" language="C++" prot="public">
+    <compoundname>swap_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structswap__t_1af7689d7c143490546e67d584a9c659c4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int swap_t::sw_asid</definition>
+        <argsstring></argsstring>
+        <name>sw_asid</name>
+        <briefdescription>
+<para>ASID number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="92" column="17" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structswap__t_1a774680c7e62dfa8e5a958218b35debca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int swap_t::sw_pageNo</definition>
+        <argsstring></argsstring>
+        <name>sw_pageNo</name>
+        <briefdescription>
+<para>Page&apos;s virtual page number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="93" column="17" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structswap__t_1a297ca3f543ce4f95ce0b2092d5065d12" prot="public" static="no" mutable="no">
+        <type><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref> *</type>
+        <definition>pteEntry_t* swap_t::sw_pte</definition>
+        <argsstring></argsstring>
+        <name>sw_pte</name>
+        <briefdescription>
+<para>Page&apos;s PTE entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="94" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>swap_t</label>
+        <link refid="structswap__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sw_pte</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pteEntry_t</label>
+        <link refid="structpte_entry__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/circleci/docs/h/pandos_types.h" line="91" column="21" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="91" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structswap__t_1af7689d7c143490546e67d584a9c659c4" prot="public" virt="non-virtual"><scope>swap_t</scope><name>sw_asid</name></member>
+      <member refid="structswap__t_1a774680c7e62dfa8e5a958218b35debca" prot="public" virt="non-virtual"><scope>swap_t</scope><name>sw_pageNo</name></member>
+      <member refid="structswap__t_1a297ca3f543ce4f95ce0b2092d5065d12" prot="public" virt="non-virtual"><scope>swap_t</scope><name>sw_pte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -63,7 +63,7 @@
 <parametername>supportp</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Support structure used from the SupportLevel. </para>
+<para>Support structure used by the support level. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

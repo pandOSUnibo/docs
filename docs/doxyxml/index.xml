@@ -17,10 +17,22 @@
     <member refid="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" kind="variable"><name>p_semAdd</name></member>
     <member refid="structpcb__t_1a015df9e7daa3900aa1b6ea919030a5ae" kind="variable"><name>p_supportStruct</name></member>
   </compound>
+  <compound refid="structpte_entry__t" kind="struct"><name>pteEntry_t</name>
+    <member refid="structpte_entry__t_1aa17cd16dca58260249039e4b6676e6cb" kind="variable"><name>pte_entryHI</name></member>
+    <member refid="structpte_entry__t_1a023095b42d1906bc59f4162da74edfa9" kind="variable"><name>pte_entryLO</name></member>
+  </compound>
   <compound refid="structsupport__t" kind="struct"><name>support_t</name>
     <member refid="structsupport__t_1adf6b479fd8850eedfed3d780adac8866" kind="variable"><name>sup_asid</name></member>
     <member refid="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" kind="variable"><name>sup_exceptState</name></member>
     <member refid="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" kind="variable"><name>sup_exceptContext</name></member>
+    <member refid="structsupport__t_1a67270727df6c26c56a62ee9ddf2aac9c" kind="variable"><name>sup_privatePgTbl</name></member>
+    <member refid="structsupport__t_1a6e3ac1db112d65a33a8dfe994d658c3d" kind="variable"><name>sup_stackTLB</name></member>
+    <member refid="structsupport__t_1ae0958931a6967359cbf1e9fc51b7312b" kind="variable"><name>sup_stackGen</name></member>
+  </compound>
+  <compound refid="structswap__t" kind="struct"><name>swap_t</name>
+    <member refid="structswap__t_1af7689d7c143490546e67d584a9c659c4" kind="variable"><name>sw_asid</name></member>
+    <member refid="structswap__t_1a774680c7e62dfa8e5a958218b35debca" kind="variable"><name>sw_pageNo</name></member>
+    <member refid="structswap__t_1a297ca3f543ce4f95ce0b2092d5065d12" kind="variable"><name>sw_pte</name></member>
   </compound>
   <compound refid="asl_8h" kind="file"><name>asl.h</name>
     <member refid="asl_8h_1acf78d4da6a3a5d5b7fd14db4c33fbf27" kind="function"><name>insertBlocked</name></member>
@@ -33,6 +45,13 @@
     <member refid="exceptions_8h_1adc21940b2cb1be9f12d888bc9f03c9bd" kind="function"><name>elapsedTime</name></member>
     <member refid="exceptions_8h_1a41de8150eff044a237990c271d57ea27" kind="function"><name>resume</name></member>
     <member refid="exceptions_8h_1acb4791b6f9b97d6e3aecd0b140c018d0" kind="function"><name>exceptionHandler</name></member>
+  </compound>
+  <compound refid="init__proc_8h" kind="file"><name>init_proc.h</name>
+    <member refid="init__proc_8h_1acce4467eee5be81c6e0d436dc91c0538" kind="define"><name>VPNBASE</name></member>
+    <member refid="init__proc_8h_1a064b061f8ad12c99ec2f1688aa22fb63" kind="define"><name>VPNTOP</name></member>
+    <member refid="init__proc_8h_1a06fb67b741c414fa1afa8f6bf5d006b8" kind="define"><name>UPROCSTACKPG</name></member>
+    <member refid="init__proc_8h_1ae7ad1116a86fc5a3faeaaa6c87d07118" kind="variable"><name>masterSemaphore</name></member>
+    <member refid="init__proc_8h_1a708a4c1a4d0c4acc4c447310dd4db27f" kind="function"><name>test</name></member>
   </compound>
   <compound refid="initial_8h" kind="file"><name>initial.h</name>
     <member refid="initial_8h_1a9ead6eb59ab991ef0ef9e6061ccdb168" kind="define"><name>PASSVEC_LOCATION</name></member>
@@ -119,6 +138,7 @@
     <member refid="pandos__const_8h_1a5761bf23cc3f07dc4b82f6647b51b4e1" kind="define"><name>ASIDSHIFT</name></member>
     <member refid="pandos__const_8h_1a7e5458b04e612844cd0ab576c62cccad" kind="define"><name>SHAREDSEGFLAG</name></member>
     <member refid="pandos__const_8h_1abed19bd164e3975bf886dfdafff9907d" kind="define"><name>PRESENTFLAG</name></member>
+    <member refid="pandos__const_8h_1a78adf66fd098fa61a23ece5c3b4b482d" kind="define"><name>CACHED</name></member>
     <member refid="pandos__const_8h_1a92ec4849e1aec11002aa2925f6343da3" kind="define"><name>DEV0ON</name></member>
     <member refid="pandos__const_8h_1a708abd782396839568216235fdb88c57" kind="define"><name>DEV1ON</name></member>
     <member refid="pandos__const_8h_1a3646030bb6820bd104184f17110321a1" kind="define"><name>DEV2ON</name></member>
@@ -180,6 +200,7 @@
   <compound refid="pandos__types_8h" kind="file"><name>pandos_types.h</name>
     <member refid="pandos__types_8h_1a23a52fc35b0eac9e0752fe67959323cc" kind="typedef"><name>cpu_t</name></member>
     <member refid="pandos__types_8h_1a8dfc83cbb8a200048ed977af78885aa1" kind="typedef"><name>memaddr</name></member>
+    <member refid="pandos__types_8h_1af98fd19bea0afba878501a5e2da3b368" kind="typedef"><name>pteEntry_t</name></member>
     <member refid="pandos__types_8h_1afde0fcb21678582c657bc6d18032620f" kind="typedef"><name>context_t</name></member>
     <member refid="pandos__types_8h_1a445f157407d491a6cf6c2ca7731a906a" kind="typedef"><name>support_t</name></member>
     <member refid="pandos__types_8h_1a71acfdbc74942780681d06efcc05a0a5" kind="typedef"><name>pcb_t</name></member>
@@ -187,6 +208,7 @@
     <member refid="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" kind="typedef"><name>size_t</name></member>
     <member refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" kind="typedef"><name>bool</name></member>
     <member refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kind="typedef"><name>semaphore</name></member>
+    <member refid="pandos__types_8h_1a8329736f9c9a1f04be26e187aec75be3" kind="typedef"><name>swap_t</name></member>
   </compound>
   <compound refid="pcb_8h" kind="file"><name>pcb.h</name>
     <member refid="pcb_8h_1a5cbd92344b2dae9f317b956359b5f2d9" kind="function"><name>initPcbs</name></member>
@@ -207,6 +229,23 @@
     <member refid="scheduler_8h_1a02a10c74ba06f8ab517805500f9aeade" kind="variable"><name>sliceStart</name></member>
     <member refid="scheduler_8h_1a7d06701ac073c331c83519e3909b7fce" kind="function"><name>schedule</name></member>
   </compound>
+  <compound refid="support_8h" kind="file"><name>support.h</name>
+    <member refid="support_8h_1aa6f1d18d0a2b51ab5b4e61782e2b2376" kind="define"><name>UPROCNUMBER</name></member>
+    <member refid="support_8h_1a19baffc775b06d55f5de083741bb2a0d" kind="function"><name>deallocSupport</name></member>
+    <member refid="support_8h_1af305587158ce37bbce527cf1474f0207" kind="function"><name>allocSupport</name></member>
+    <member refid="support_8h_1a465f4b89244845b3aab6e535f51792eb" kind="function"><name>initSupport</name></member>
+  </compound>
+  <compound refid="sys__support_8h" kind="file"><name>sys_support.h</name>
+    <member refid="sys__support_8h_1a94c6d652671a59925b1f44e4101cbf3f" kind="define"><name>DEVREG</name></member>
+    <member refid="sys__support_8h_1a8cb03c01615610577656013409d9aae2" kind="define"><name>DEVADDRBASE</name></member>
+    <member refid="sys__support_8h_1a05e6ca29255184aed86c11240d680e7c" kind="define"><name>FLASHSEM</name></member>
+    <member refid="sys__support_8h_1a522da89f2fd99d6e6fc84efa0bdc10ab" kind="define"><name>PRINTSEM</name></member>
+    <member refid="sys__support_8h_1a53cf668199242d57a095e3d6274dc5df" kind="define"><name>TERMRDSEM</name></member>
+    <member refid="sys__support_8h_1a74781cf02c9d1b86eb50371615e8766f" kind="define"><name>TERMWRSEM</name></member>
+    <member refid="sys__support_8h_1a406b0c511f30a54e23df6faa0885cedb" kind="variable"><name>semMutexDevices</name></member>
+    <member refid="sys__support_8h_1a7008e278540af3457727f8fa44a9625f" kind="function"><name>generalExceptionHandler</name></member>
+    <member refid="sys__support_8h_1a5d626136b13fc88ac673a4750ec73afa" kind="function"><name>trapExceptionHandler</name></member>
+  </compound>
   <compound refid="syscalls_8h" kind="file"><name>syscalls.h</name>
     <member refid="syscalls_8h_1aa2796039431158b3273acbdd4e3e0e38" kind="function"><name>createProcess</name></member>
     <member refid="syscalls_8h_1a255d4de0a1d808e3a36be8ceb5c0f041" kind="function"><name>termProcess</name></member>
@@ -216,6 +255,14 @@
     <member refid="syscalls_8h_1a272b1dc7db5bdf9bb32ba4ef6b867817" kind="function"><name>getTime</name></member>
     <member refid="syscalls_8h_1a8dfc1fcdd91191bb7f53c93d8c244908" kind="function"><name>clockWait</name></member>
     <member refid="syscalls_8h_1a08cd785b0bf1e92f481f167f52b4ae25" kind="function"><name>getSupportPtr</name></member>
+  </compound>
+  <compound refid="vm__support_8h" kind="file"><name>vm_support.h</name>
+    <member refid="vm__support_8h_1a747f5290df0223fafd210bb5eecd89b4" kind="define"><name>FRAMENUMBER</name></member>
+    <member refid="vm__support_8h_1ac62dfd794d8eb08ac5605aadb27a9838" kind="define"><name>UNKNOWNDATAPAGE</name></member>
+    <member refid="vm__support_8h_1a9d8f1331f52e7251d8ede2346068140f" kind="variable"><name>dataPages</name></member>
+    <member refid="vm__support_8h_1a77e63c1d9953325b49a0c50f4047a8ce" kind="function"><name>updateTLB</name></member>
+    <member refid="vm__support_8h_1a2d3c1792db2d40477810462c744422a6" kind="function"><name>initSwapStructs</name></member>
+    <member refid="vm__support_8h_1afb6e47db6de27a4941664230065ee5eb" kind="function"><name>uTLB_PageFaultHandler</name></member>
   </compound>
   <compound refid="dir_c3a3ee36a1e03ad614258ece27f46d29" kind="dir"><name>/home/circleci/docs/h</name>
   </compound>

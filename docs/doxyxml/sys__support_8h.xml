@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="sys__support_8h" kind="file" language="C++">
+    <compoundname>sys_support.h</compoundname>
+    <includes refid="pandos__const_8h" local="yes">pandos_const.h</includes>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/sys_support.h</label>
+        <link refid="sys__support_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="4">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sys__support_8h_1a94c6d652671a59925b1f44e4101cbf3f" prot="public" static="no">
+        <name>DEVREG</name>
+        <param><defname>IntlineNo</defname></param>
+        <param><defname>DevNo</defname></param>
+        <param><defname>Reg</defname></param>
+        <initializer>(DEVADDRBASE(IntlineNo, DevNo) +  (Reg * <ref refid="pandos__const_8h_1a6acf0ed6327e9667519dec882dcaa84f" kindref="member">WORDLEN</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="18" column="9" bodyfile="/home/circleci/docs/h/sys_support.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sys__support_8h_1a8cb03c01615610577656013409d9aae2" prot="public" static="no">
+        <name>DEVADDRBASE</name>
+        <param><defname>IntlineNo</defname></param>
+        <param><defname>DevNo</defname></param>
+        <initializer>(<ref refid="pandos__types_8h_1a8dfc83cbb8a200048ed977af78885aa1" kindref="member">memaddr</ref>)(0x10000054 + ((IntlineNo - 3) * 0x80) + (DevNo * 0x10))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="19" column="9" bodyfile="/home/circleci/docs/h/sys_support.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sys__support_8h_1a05e6ca29255184aed86c11240d680e7c" prot="public" static="no">
+        <name>FLASHSEM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="21" column="9" bodyfile="/home/circleci/docs/h/sys_support.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sys__support_8h_1a522da89f2fd99d6e6fc84efa0bdc10ab" prot="public" static="no">
+        <name>PRINTSEM</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="22" column="9" bodyfile="/home/circleci/docs/h/sys_support.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sys__support_8h_1a53cf668199242d57a095e3d6274dc5df" prot="public" static="no">
+        <name>TERMRDSEM</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="23" column="9" bodyfile="/home/circleci/docs/h/sys_support.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sys__support_8h_1a74781cf02c9d1b86eb50371615e8766f" prot="public" static="no">
+        <name>TERMWRSEM</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="24" column="9" bodyfile="/home/circleci/docs/h/sys_support.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="sys__support_8h_1a406b0c511f30a54e23df6faa0885cedb" prot="public" static="no" mutable="no">
+        <type><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref></type>
+        <definition>semaphore semMutexDevices[DEVICE_TYPES][DEVICE_INSTANCES]</definition>
+        <argsstring>[DEVICE_TYPES][DEVICE_INSTANCES]</argsstring>
+        <name>semMutexDevices</name>
+        <briefdescription>
+<para>Support level semaphores to regulate access to devices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>These semaphores should always be accessed with SYSCALL(...). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="34" column="18" declfile="/home/circleci/docs/h/sys_support.h" declline="34" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sys__support_8h_1a7008e278540af3457727f8fa44a9625f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void generalExceptionHandler</definition>
+        <argsstring>()</argsstring>
+        <name>generalExceptionHandler</name>
+        <briefdescription>
+<para>Handles general support level exceptions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="39" column="13" declfile="/home/circleci/docs/h/sys_support.h" declline="39" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="sys__support_8h_1a5d626136b13fc88ac673a4750ec73afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trapExceptionHandler</definition>
+        <argsstring>(support_t *currentSupport)</argsstring>
+        <name>trapExceptionHandler</name>
+        <param>
+          <type><ref refid="structsupport__t" kindref="compound">support_t</ref> *</type>
+          <declname>currentSupport</declname>
+        </param>
+        <briefdescription>
+<para>Handles support level traps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentSupport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the support structure of the process that caused the trap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/sys_support.h" line="47" column="13" declfile="/home/circleci/docs/h/sys_support.h" declline="47" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Support-level syscalls. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.3.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-04-19</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>SYSUPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSUPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__const_8h" kindref="compound">pandos_const.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVREG(IntlineNo,<sp/>DevNo,<sp/>Reg)<sp/><sp/>(DEVADDRBASE(IntlineNo,<sp/>DevNo)<sp/>+<sp/><sp/>(Reg<sp/>*<sp/>WORDLEN))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVADDRBASE(IntlineNo,<sp/>DevNo)<sp/>(memaddr)(0x10000054<sp/>+<sp/>((IntlineNo<sp/>-<sp/>3)<sp/>*<sp/>0x80)<sp/>+<sp/>(DevNo<sp/>*<sp/>0x10))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHSEM<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRINTSEM<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TERMRDSEM<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TERMWRSEM<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref><sp/><ref refid="sys__support_8h_1a406b0c511f30a54e23df6faa0885cedb" kindref="member">semMutexDevices</ref>[<ref refid="pandos__const_8h_1a4a014b7e9be1d2e2a6af6528dfef8fc6" kindref="member">DEVICE_TYPES</ref>][<ref refid="pandos__const_8h_1a16c3a5a0aec75fa03fed53ef0b7cabbe" kindref="member">DEVICE_INSTANCES</ref>];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sys__support_8h_1a7008e278540af3457727f8fa44a9625f" kindref="member">generalExceptionHandler</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sys__support_8h_1a5d626136b13fc88ac673a4750ec73afa" kindref="member">trapExceptionHandler</ref>(<ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>*currentSupport);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/sys_support.h"/>
+  </compounddef>
+</doxygen>

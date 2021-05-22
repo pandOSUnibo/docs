@@ -6,9 +6,13 @@
     <includes refid="pandos__const_8h" local="yes">pandos_const.h</includes>
     <includedby refid="asl_8h" local="yes">/home/circleci/docs/h/asl.h</includedby>
     <includedby refid="exceptions_8h" local="yes">/home/circleci/docs/h/exceptions.h</includedby>
+    <includedby refid="init__proc_8h" local="yes">/home/circleci/docs/h/init_proc.h</includedby>
     <includedby refid="initial_8h" local="yes">/home/circleci/docs/h/initial.h</includedby>
     <includedby refid="pcb_8h" local="yes">/home/circleci/docs/h/pcb.h</includedby>
+    <includedby refid="support_8h" local="yes">/home/circleci/docs/h/support.h</includedby>
+    <includedby refid="sys__support_8h" local="yes">/home/circleci/docs/h/sys_support.h</includedby>
     <includedby refid="syscalls_8h" local="yes">/home/circleci/docs/h/syscalls.h</includedby>
+    <includedby refid="vm__support_8h" local="yes">/home/circleci/docs/h/vm_support.h</includedby>
     <incdepgraph>
       <node id="2">
         <label>umps3/umps/types.h</label>
@@ -36,11 +40,25 @@
         <label>/home/circleci/docs/h/exceptions.h</label>
         <link refid="exceptions_8h"/>
       </node>
-      <node id="5">
+      <node id="4">
+        <label>/home/circleci/docs/h/init_proc.h</label>
+        <link refid="init__proc_8h"/>
+      </node>
+      <node id="7">
+        <label>/home/circleci/docs/h/support.h</label>
+        <link refid="support_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>/home/circleci/docs/h/pcb.h</label>
         <link refid="pcb_8h"/>
       </node>
-      <node id="6">
+      <node id="9">
+        <label>/home/circleci/docs/h/sys_support.h</label>
+        <link refid="sys__support_8h"/>
+      </node>
+      <node id="10">
         <label>/home/circleci/docs/h/syscalls.h</label>
         <link refid="syscalls_8h"/>
       </node>
@@ -48,7 +66,11 @@
         <label>/home/circleci/docs/h/asl.h</label>
         <link refid="asl_8h"/>
       </node>
-      <node id="4">
+      <node id="8">
+        <label>/home/circleci/docs/h/vm_support.h</label>
+        <link refid="vm__support_8h"/>
+      </node>
+      <node id="5">
         <label>/home/circleci/docs/h/initial.h</label>
         <link refid="initial_8h"/>
       </node>
@@ -65,11 +87,21 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
+    <innerclass refid="structpte_entry__t" prot="public">pteEntry_t</innerclass>
     <innerclass refid="structcontext__t" prot="public">context_t</innerclass>
     <innerclass refid="structsupport__t" prot="public">support_t</innerclass>
     <innerclass refid="structpcb__t" prot="public">pcb_t</innerclass>
+    <innerclass refid="structswap__t" prot="public">swap_t</innerclass>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="pandos__types_8h_1a23a52fc35b0eac9e0752fe67959323cc" prot="public" static="no">
         <type>signed int</type>
@@ -98,6 +130,19 @@
         </inbodydescription>
         <location file="/home/circleci/docs/h/pandos_types.h" line="20" column="22" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="20" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="pandos__types_8h_1af98fd19bea0afba878501a5e2da3b368" prot="public" static="no">
+        <type>struct <ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref></type>
+        <definition>typedef struct pteEntry_t pteEntry_t</definition>
+        <argsstring></argsstring>
+        <name>pteEntry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="25" column="12"/>
+      </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1afde0fcb21678582c657bc6d18032620f" prot="public" static="no">
         <type>struct <ref refid="structcontext__t" kindref="compound">context_t</ref></type>
         <definition>typedef struct context_t context_t</definition>
@@ -109,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="26" column="11"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="32" column="11"/>
       </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1a445f157407d491a6cf6c2ca7731a906a" prot="public" static="no">
         <type>struct <ref refid="structsupport__t" kindref="compound">support_t</ref></type>
@@ -122,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="32" column="11"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="42" column="11"/>
       </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1a71acfdbc74942780681d06efcc05a0a5" prot="public" static="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref></type>
@@ -135,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="62" column="7"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="73" column="7"/>
       </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1a64a848403f23a0af63c3e3fdf2c88d03" prot="public" static="no">
         <type>struct <ref refid="structpcb__t" kindref="compound">pcb_t</ref> *</type>
@@ -148,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="62" column="16"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="73" column="16"/>
       </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" prot="public" static="no">
         <type>unsigned int</type>
@@ -162,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="67" column="22" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="78" column="22" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" prot="public" static="no">
         <type>int</type>
@@ -176,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="72" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="72" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="83" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" prot="public" static="no">
         <type>int</type>
@@ -190,7 +235,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="77" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="77" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="88" column="13" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pandos__types_8h_1a8329736f9c9a1f04be26e187aec75be3" prot="public" static="no">
+        <type>struct <ref refid="structswap__t" kindref="compound">swap_t</ref></type>
+        <definition>typedef struct swap_t swap_t</definition>
+        <argsstring></argsstring>
+        <name>swap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="95" column="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -211,45 +269,62 @@
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20" refid="pandos__types_8h_1a8dfc83cbb8a200048ed977af78885aa1" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a8dfc83cbb8a200048ed977af78885aa1" kindref="member">memaddr</ref>;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="structcontext__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcontext__t" kindref="compound">context_t</ref><sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c_stackPtr;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c_status;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c_pc;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}<sp/><ref refid="structcontext__t" kindref="compound">context_t</ref>;</highlight></codeline>
+<codeline lineno="22" refid="structpte_entry__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pte_entryHI;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pte_entryLO;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="structsupport__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>{</highlight></codeline>
-<codeline lineno="29" refid="structsupport__t_1adf6b479fd8850eedfed3d780adac8866" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsupport__t_1adf6b479fd8850eedfed3d780adac8866" kindref="member">sup_asid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="30" refid="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>state_t<sp/><sp/><sp/><ref refid="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" kindref="member">sup_exceptState</ref>[2];<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="31" refid="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcontext__t" kindref="compound">context_t</ref><sp/><ref refid="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" kindref="member">sup_exceptContext</ref>[2];<sp/></highlight></codeline>
-<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structsupport__t" kindref="compound">support_t</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structcontext__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcontext__t" kindref="compound">context_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c_stackPtr;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c_status;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c_pc;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="structcontext__t" kindref="compound">context_t</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="structpcb__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>queue<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="structpcb__t_1a6d1514ac0cfe96f5384a9915df9e02a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/><sp/><sp/>*<ref refid="structpcb__t_1a6d1514ac0cfe96f5384a9915df9e02a1" kindref="member">p_next</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="47" refid="structpcb__t_1a65ec986dfab35a1b5afaedd2604931ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/><sp/><sp/>*<ref refid="structpcb__t_1a65ec986dfab35a1b5afaedd2604931ab" kindref="member">p_prev</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>tree<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="structpcb__t_1aea679c77d1e8bd763bb7d0a6b9df7f87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1aea679c77d1e8bd763bb7d0a6b9df7f87" kindref="member">p_prnt</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="51" refid="structpcb__t_1a3935a4ed3b39292813617ebc1c467117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1a3935a4ed3b39292813617ebc1c467117" kindref="member">p_child</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="52" refid="structpcb__t_1ab3106557bcc23b4b2955009955db4471" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1ab3106557bcc23b4b2955009955db4471" kindref="member">p_next_sib</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="53" refid="structpcb__t_1ad4705c9f47a5ff2c427eceb46e962eca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1ad4705c9f47a5ff2c427eceb46e962eca" kindref="member">p_prev_sib</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>status<sp/>information</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="structpcb__t_1a3476a4aa249da711fa3f8976ff5f8e3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>state_t<sp/><sp/><sp/><sp/><sp/><ref refid="structpcb__t_1a3476a4aa249da711fa3f8976ff5f8e3b" kindref="member">p_s</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="57" refid="structpcb__t_1a65820e6af73bc01d3afa522bb9f5955f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cpu_t<sp/><ref refid="structpcb__t_1a65820e6af73bc01d3afa522bb9f5955f" kindref="member">p_time</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="58" refid="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" kindref="member">p_semAdd</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="59" refid="structpcb__t_1a015df9e7daa3900aa1b6ea919030a5ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>*<ref refid="structpcb__t_1a015df9e7daa3900aa1b6ea919030a5ae" kindref="member">p_supportStruct</ref>;<sp/></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>more<sp/>fields<sp/>here</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref>,<sp/>*<ref refid="structpcb__t" kindref="compound">pcb_PTR</ref>;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67" refid="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref>;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" kindref="member">bool</ref>;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77" refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref>;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structsupport__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="36" refid="structsupport__t_1adf6b479fd8850eedfed3d780adac8866" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsupport__t_1adf6b479fd8850eedfed3d780adac8866" kindref="member">sup_asid</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>state_t<sp/><sp/><sp/><ref refid="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" kindref="member">sup_exceptState</ref>[2];<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcontext__t" kindref="compound">context_t</ref><sp/><ref refid="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" kindref="member">sup_exceptContext</ref>[2];<sp/></highlight></codeline>
+<codeline lineno="39" refid="structsupport__t_1a67270727df6c26c56a62ee9ddf2aac9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref><sp/><ref refid="structsupport__t_1a67270727df6c26c56a62ee9ddf2aac9c" kindref="member">sup_privatePgTbl</ref>[USERPGTBLSIZE];<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sup_stackTLB[500];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sup_stackGen[500];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/><ref refid="structsupport__t" kindref="compound">support_t</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structpcb__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>queue<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structpcb__t_1a6d1514ac0cfe96f5384a9915df9e02a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/><sp/><sp/>*<ref refid="structpcb__t_1a6d1514ac0cfe96f5384a9915df9e02a1" kindref="member">p_next</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structpcb__t_1a65ec986dfab35a1b5afaedd2604931ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/><sp/><sp/>*<ref refid="structpcb__t_1a65ec986dfab35a1b5afaedd2604931ab" kindref="member">p_prev</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>tree<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structpcb__t_1aea679c77d1e8bd763bb7d0a6b9df7f87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpcb__t" kindref="compound">pcb_t</ref><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1aea679c77d1e8bd763bb7d0a6b9df7f87" kindref="member">p_prnt</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structpcb__t_1a3935a4ed3b39292813617ebc1c467117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1a3935a4ed3b39292813617ebc1c467117" kindref="member">p_child</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="structpcb__t_1ab3106557bcc23b4b2955009955db4471" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1ab3106557bcc23b4b2955009955db4471" kindref="member">p_next_sib</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="structpcb__t_1ad4705c9f47a5ff2c427eceb46e962eca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structpcb__t_1ad4705c9f47a5ff2c427eceb46e962eca" kindref="member">p_prev_sib</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>status<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structpcb__t_1a3476a4aa249da711fa3f8976ff5f8e3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>state_t<sp/><sp/><sp/><sp/><sp/><ref refid="structpcb__t_1a3476a4aa249da711fa3f8976ff5f8e3b" kindref="member">p_s</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="structpcb__t_1a65820e6af73bc01d3afa522bb9f5955f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cpu_t<sp/><ref refid="structpcb__t_1a65820e6af73bc01d3afa522bb9f5955f" kindref="member">p_time</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structpcb__t_1a90f370ff52e7af43c03dd8bc98c2e203" kindref="member">p_semAdd</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="structpcb__t_1a015df9e7daa3900aa1b6ea919030a5ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsupport__t" kindref="compound">support_t</ref><sp/>*<ref refid="structpcb__t_1a015df9e7daa3900aa1b6ea919030a5ae" kindref="member">p_supportStruct</ref>;<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>more<sp/>fields<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><ref refid="structpcb__t" kindref="compound">pcb_t</ref>,<sp/>*<ref refid="structpcb__t" kindref="compound">pcb_PTR</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a7c94ea6f8948649f8d181ae55911eeaf" kindref="member">size_t</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a1062901a7428fdd9c7f180f5e01ea056" kindref="member">bool</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Page<sp/>swap<sp/>pool<sp/>information<sp/>structure<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structswap__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structswap__t" kindref="compound">swap_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="92" refid="structswap__t_1af7689d7c143490546e67d584a9c659c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structswap__t_1af7689d7c143490546e67d584a9c659c4" kindref="member">sw_asid</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="structswap__t_1a774680c7e62dfa8e5a958218b35debca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structswap__t_1a774680c7e62dfa8e5a958218b35debca" kindref="member">sw_pageNo</ref>;<sp/></highlight></codeline>
+<codeline lineno="94" refid="structswap__t_1a297ca3f543ce4f95ce0b2092d5065d12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref><sp/>*<ref refid="structswap__t_1a297ca3f543ce4f95ce0b2092d5065d12" kindref="member">sw_pte</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structswap__t" kindref="compound">swap_t</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/circleci/docs/h/pandos_types.h"/>
   </compounddef>

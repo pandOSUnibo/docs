@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="init__proc_8h" kind="file" language="C++">
+    <compoundname>init_proc.h</compoundname>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/init_proc.h</label>
+        <link refid="init__proc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="2">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="init__proc_8h_1acce4467eee5be81c6e0d436dc91c0538" prot="public" static="no">
+        <name>VPNBASE</name>
+        <initializer>0x80000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/init_proc.h" line="17" column="9" bodyfile="/home/circleci/docs/h/init_proc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="init__proc_8h_1a064b061f8ad12c99ec2f1688aa22fb63" prot="public" static="no">
+        <name>VPNTOP</name>
+        <initializer>0x8001EFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/init_proc.h" line="18" column="9" bodyfile="/home/circleci/docs/h/init_proc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="init__proc_8h_1a06fb67b741c414fa1afa8f6bf5d006b8" prot="public" static="no">
+        <name>UPROCSTACKPG</name>
+        <initializer>0xBFFFF000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/init_proc.h" line="19" column="9" bodyfile="/home/circleci/docs/h/init_proc.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="init__proc_8h_1ae7ad1116a86fc5a3faeaaa6c87d07118" prot="public" static="no" mutable="no">
+        <type><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref></type>
+        <definition>semaphore masterSemaphore</definition>
+        <argsstring></argsstring>
+        <name>masterSemaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/init_proc.h" line="22" column="18" declfile="/home/circleci/docs/h/init_proc.h" declline="22" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="init__proc_8h_1a708a4c1a4d0c4acc4c447310dd4db27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test</definition>
+        <argsstring>(void)</argsstring>
+        <name>test</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>First process that will be loaded by pandOS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/init_proc.h" line="27" column="13" declfile="/home/circleci/docs/h/init_proc.h" declline="27" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Process initialization functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-04-19</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>INITPROC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INITPROC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VPNBASE<sp/>0x80000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VPNTOP<sp/><sp/>0x8001EFFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPROCSTACKPG<sp/>0xBFFFF000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="pandos__types_8h_1a76b05b8aa132f7da89408ed0cfe460a9" kindref="member">semaphore</ref><sp/>masterSemaphore;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="init__proc_8h_1a708a4c1a4d0c4acc4c447310dd4db27f" kindref="member">test</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/init_proc.h"/>
+  </compounddef>
+</doxygen>

@@ -9,13 +9,13 @@
         <argsstring></argsstring>
         <name>sup_asid</name>
         <briefdescription>
-<para>process ID </para>
+<para>Process ID. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="29" column="15" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="36" column="15" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" prot="public" static="no" mutable="no">
         <type>state_t</type>
@@ -23,13 +23,13 @@
         <argsstring>[2]</argsstring>
         <name>sup_exceptState</name>
         <briefdescription>
-<para>old state exceptions </para>
+<para>Old state exceptions. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="30" column="15" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="37" column="15" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" prot="public" static="no" mutable="no">
         <type><ref refid="structcontext__t" kindref="compound">context_t</ref></type>
@@ -37,13 +37,53 @@
         <argsstring>[2]</argsstring>
         <name>sup_exceptContext</name>
         <briefdescription>
-<para>new contexts for passing up </para>
+<para>New contexts for passing up. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="31" column="15" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="38" column="15" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsupport__t_1a67270727df6c26c56a62ee9ddf2aac9c" prot="public" static="no" mutable="no">
+        <type><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref></type>
+        <definition>pteEntry_t support_t::sup_privatePgTbl[USERPGTBLSIZE]</definition>
+        <argsstring>[USERPGTBLSIZE]</argsstring>
+        <name>sup_privatePgTbl</name>
+        <briefdescription>
+<para>User page table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="39" column="16" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsupport__t_1a6e3ac1db112d65a33a8dfe994d658c3d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int support_t::sup_stackTLB[500]</definition>
+        <argsstring>[500]</argsstring>
+        <name>sup_stackTLB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="40" column="9" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsupport__t_1ae0958931a6967359cbf1e9fc51b7312b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int support_t::sup_stackGen[500]</definition>
+        <argsstring>[500]</argsstring>
+        <name>sup_stackGen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="41" column="9" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -61,13 +101,23 @@
         <childnode refid="2" relation="usage">
           <edgelabel>sup_exceptContext</edgelabel>
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sup_privatePgTbl</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pteEntry_t</label>
+        <link refid="structpte_entry__t"/>
       </node>
     </collaborationgraph>
-    <location file="/home/circleci/docs/h/pandos_types.h" line="28" column="24" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="28" bodyend="32"/>
+    <location file="/home/circleci/docs/h/pandos_types.h" line="35" column="24" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="35" bodyend="42"/>
     <listofallmembers>
       <member refid="structsupport__t_1adf6b479fd8850eedfed3d780adac8866" prot="public" virt="non-virtual"><scope>support_t</scope><name>sup_asid</name></member>
       <member refid="structsupport__t_1ab5346b8125ae1f5c7b02f2268bafff51" prot="public" virt="non-virtual"><scope>support_t</scope><name>sup_exceptContext</name></member>
       <member refid="structsupport__t_1ac13af52f35e178ac0463bc3620f3ad96" prot="public" virt="non-virtual"><scope>support_t</scope><name>sup_exceptState</name></member>
+      <member refid="structsupport__t_1a67270727df6c26c56a62ee9ddf2aac9c" prot="public" virt="non-virtual"><scope>support_t</scope><name>sup_privatePgTbl</name></member>
+      <member refid="structsupport__t_1ae0958931a6967359cbf1e9fc51b7312b" prot="public" virt="non-virtual"><scope>support_t</scope><name>sup_stackGen</name></member>
+      <member refid="structsupport__t_1a6e3ac1db112d65a33a8dfe994d658c3d" prot="public" virt="non-virtual"><scope>support_t</scope><name>sup_stackTLB</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

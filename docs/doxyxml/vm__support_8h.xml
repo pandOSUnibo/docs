@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="vm__support_8h" kind="file" language="C++">
+    <compoundname>vm_support.h</compoundname>
+    <includes refid="pandos__const_8h" local="yes">pandos_const.h</includes>
+    <includes refid="pandos__types_8h" local="yes">pandos_types.h</includes>
+    <includes refid="support_8h" local="yes">support.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>umps3/umps/types.h</label>
+      </node>
+      <node id="6">
+        <label>support.h</label>
+        <link refid="support_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pandos_const.h</label>
+        <link refid="pandos__const_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>umps3/umps/const.h</label>
+      </node>
+      <node id="1">
+        <label>/home/circleci/docs/h/vm_support.h</label>
+        <link refid="vm__support_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pandos_types.h</label>
+        <link refid="pandos__types_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vm__support_8h_1a747f5290df0223fafd210bb5eecd89b4" prot="public" static="no">
+        <name>FRAMENUMBER</name>
+        <initializer>(2 * UPROCNUMBER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/vm_support.h" line="20" column="9" bodyfile="/home/circleci/docs/h/vm_support.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vm__support_8h_1ac62dfd794d8eb08ac5605aadb27a9838" prot="public" static="no">
+        <name>UNKNOWNDATAPAGE</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/vm_support.h" line="21" column="9" bodyfile="/home/circleci/docs/h/vm_support.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vm__support_8h_1a9d8f1331f52e7251d8ede2346068140f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dataPages[UPROCNUMBER]</definition>
+        <argsstring>[UPROCNUMBER]</argsstring>
+        <name>dataPages</name>
+        <briefdescription>
+<para>Contains the index of the first .data page for each active user process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UNKNOWNDATAPAGE means that no information is available. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/vm_support.h" line="29" column="12" declfile="/home/circleci/docs/h/vm_support.h" declline="29" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vm__support_8h_1a77e63c1d9953325b49a0c50f4047a8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void updateTLB</definition>
+        <argsstring>(pteEntry_t *updatedEntry)</argsstring>
+        <name>updateTLB</name>
+        <param>
+          <type><ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref> *</type>
+          <declname>updatedEntry</declname>
+        </param>
+        <briefdescription>
+<para>Updates the TLB. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>updatedEntry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the entry with the new TLB values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/vm_support.h" line="36" column="6" declfile="/home/circleci/docs/h/vm_support.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vm__support_8h_1a2d3c1792db2d40477810462c744422a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initSwapStructs</definition>
+        <argsstring>()</argsstring>
+        <name>initSwapStructs</name>
+        <briefdescription>
+<para>Initializes support level structures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/vm_support.h" line="41" column="6" declfile="/home/circleci/docs/h/vm_support.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vm__support_8h_1afb6e47db6de27a4941664230065ee5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uTLB_PageFaultHandler</definition>
+        <argsstring>()</argsstring>
+        <name>uTLB_PageFaultHandler</name>
+        <briefdescription>
+<para>Handles TLB Page Fault exceptions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/circleci/docs/h/vm_support.h" line="46" column="6" declfile="/home/circleci/docs/h/vm_support.h" declline="46" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Virtual memory management. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Luca Donno, Antonio Lopez, Samuele Marro, Edoardo Merli </para>
+</simplesect>
+<simplesect kind="version"><para>0.3.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-04-19</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>VMSUPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VMSUPPORT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__const_8h" kindref="compound">pandos_const.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pandos__types_8h" kindref="compound">pandos_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="support_8h" kindref="compound">support.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FRAMENUMBER<sp/>(2<sp/>*<sp/>UPROCNUMBER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNKNOWNDATAPAGE<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vm__support_8h_1a9d8f1331f52e7251d8ede2346068140f" kindref="member">dataPages</ref>[UPROCNUMBER];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vm__support_8h_1a77e63c1d9953325b49a0c50f4047a8ce" kindref="member">updateTLB</ref>(<ref refid="structpte_entry__t" kindref="compound">pteEntry_t</ref><sp/>*updatedEntry);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vm__support_8h_1a2d3c1792db2d40477810462c744422a6" kindref="member">initSwapStructs</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vm__support_8h_1afb6e47db6de27a4941664230065ee5eb" kindref="member">uTLB_PageFaultHandler</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/circleci/docs/h/vm_support.h"/>
+  </compounddef>
+</doxygen>

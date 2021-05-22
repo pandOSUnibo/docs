@@ -4,13 +4,17 @@
     <compoundname>/home/circleci/docs/h</compoundname>
     <innerfile refid="asl_8h">asl.h</innerfile>
     <innerfile refid="exceptions_8h">exceptions.h</innerfile>
+    <innerfile refid="init__proc_8h">init_proc.h</innerfile>
     <innerfile refid="initial_8h">initial.h</innerfile>
     <innerfile refid="interrupts_8h">interrupts.h</innerfile>
     <innerfile refid="pandos__const_8h">pandos_const.h</innerfile>
     <innerfile refid="pandos__types_8h">pandos_types.h</innerfile>
     <innerfile refid="pcb_8h">pcb.h</innerfile>
     <innerfile refid="scheduler_8h">scheduler.h</innerfile>
+    <innerfile refid="support_8h">support.h</innerfile>
+    <innerfile refid="sys__support_8h">sys_support.h</innerfile>
     <innerfile refid="syscalls_8h">syscalls.h</innerfile>
+    <innerfile refid="vm__support_8h">vm_support.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

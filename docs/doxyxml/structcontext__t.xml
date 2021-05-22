@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="23" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="23" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="29" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcontext__t_1a1aeb8f0d0519e07c3be7fb2bc9fc20e7" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="24" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="30" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcontext__t_1a4c07fe81c9ea0fd34bdd61cc2ba25fbc" prot="public" static="no" mutable="no">
         <type>unsigned int</type>
@@ -40,14 +40,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/circleci/docs/h/pandos_types.h" line="25" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="25" bodyend="-1"/>
+        <location file="/home/circleci/docs/h/pandos_types.h" line="31" column="18" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/circleci/docs/h/pandos_types.h" line="22" column="24" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="22" bodyend="26"/>
+    <location file="/home/circleci/docs/h/pandos_types.h" line="28" column="24" bodyfile="/home/circleci/docs/h/pandos_types.h" bodystart="28" bodyend="32"/>
     <listofallmembers>
       <member refid="structcontext__t_1a4c07fe81c9ea0fd34bdd61cc2ba25fbc" prot="public" virt="non-virtual"><scope>context_t</scope><name>c_pc</name></member>
       <member refid="structcontext__t_1adeb091664595ba543808705442f0b318" prot="public" virt="non-virtual"><scope>context_t</scope><name>c_stackPtr</name></member>
